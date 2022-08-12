@@ -1,0 +1,1 @@
+export const sitelogo ="./Images/Logo.svg";

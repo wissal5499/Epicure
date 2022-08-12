@@ -1,0 +1,13 @@
+
+.searchHeader{
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+}
+.searchBox{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 200px;
+    align-items: flex-start;
+}
