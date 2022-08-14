@@ -5,8 +5,9 @@ export const Container = styled.div`
     margin-left: 5%;
     margin-right: 5%;
 `
+export const BodyContainer = styled.div`
 
-
+`
 export const Title = styled.p`
     width: 100%;
     height: 5%;
@@ -28,7 +29,7 @@ export const ButtonContainer = styled.div`
     gap: 2%;
 `
 interface ButtonProps{
-    active?: string;
+    active: string;
 }
 
 export const AllRestaurants = styled.button<ButtonProps>`
@@ -107,7 +108,7 @@ export const RestImage= styled.img`
     width: 100%;
 
 `
-export const RestDetails= styled.div`
+export const RestDetailsContainer= styled.div`
     width: 96%;
     margin-left: 2%;
     display: flex;
@@ -121,7 +122,13 @@ export const RestDetails= styled.div`
     align-self: stretch;
     flex-grow: 0;
     margin-top: -4px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+`
+export const RestDetails= styled.div`
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
 `
 export const RestName= styled.p`
     height: 2px;
@@ -151,11 +158,27 @@ export const RestLocation= styled.p`
 
 `
 export const RestContainer= styled.div`
-    padding-right: 3px;
-    margin-top: 25px;
+        padding-right: 3px;
+        margin-top: 25px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 1rem;
+      
+      @media (min-width: 400px) 
+        grid-template-columns: repeat(2, 1fr);
+      
+      @media (min-width: 900px) {
+         grid-template-columns: repeat(3, 1fr);
 `
 export const ImageButton= styled.button`
-border: none;
-background-color: transparent;
+    border: none;
+    background-color: transparent;
+`
+export const Hr=styled.hr`
+    width: 110%;
+    height: 0px;
+    border: 1px solid #F2F2F2;
+    margin-left: -5%;
 `
 

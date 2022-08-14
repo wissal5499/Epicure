@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import restaurant from "../../../constants/JsonFolder/Restaurant.json";
 import { useNavigate } from "react-router-dom";
-import "./Restaurants.css";
+//import "./Restaurants.css";
 import {
   Container,
   Title,
@@ -12,11 +12,14 @@ import {
   MostPopularRestaurants,
   OpeningHours,
   RestImage,
-  RestDetails,
+  RestDetailsContainer,
   RestName,
   RestLocation,
   RestContainer,
   ImageButton,
+  RestDetails,
+  BodyContainer,
+  Hr,
 } from "./styles";
 
 export default function Restaurants() {
@@ -74,25 +77,26 @@ export default function Restaurants() {
           Open Now
         </OpeningHours>
       </ButtonContainer>
-
-      <div>
-        <RestContainer className="cards">
-          {RestaurantsArray.map((element, key) => (
-            <div className="card">
-              <ImageButton onClick={ShowMoreInfo}>
-                <RestImage src={element.image} alt="rest image" />
-              </ImageButton>
+      <br />
+      <RestContainer className="cards">
+        {RestaurantsArray.map((element, key) => (
+          <div key={key} className="card">
+            <ImageButton onClick={ShowMoreInfo}>
+              <RestImage src={element.image} alt="rest image" />
+            </ImageButton>
+            <RestDetailsContainer>
               <RestDetails>
                 <RestName>{element.name}</RestName>
                 <RestLocation>{element.location}</RestLocation>
               </RestDetails>
-            </div>
-          ))}
-        </RestContainer>
-      </div>
-
+            </RestDetailsContainer>
+          </div>
+        ))}
+      </RestContainer>
       <br />
-      <hr />
+      <div>
+        <Hr />
+      </div>
       <br />
     </Container>
   );

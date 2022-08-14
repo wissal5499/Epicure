@@ -3,13 +3,11 @@ import styled from "styled-components";
 export const FooterContainer = styled.div`
     width: 90%;
     height: 180px;
-    left: -1px;
-    top: 195px;
     display: flex;
     flex-direction: column;
     gap: 17%;
     background: #FFFFFF;
-    margin-top: 6%;
+    background: #FFFFFF;
 `
 export const FooterElement = styled.button`
     width: 50%;

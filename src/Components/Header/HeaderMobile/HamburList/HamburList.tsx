@@ -7,13 +7,14 @@ import {
   Headerbutton,
   ListMenue,
   ButtonElement,
+  Hr,
 } from "./styles";
 
 interface Props {
   CloseMenueList: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default function HeaderList(props: Props) {
+export default function HamburList(props: Props) {
   const navigate = useNavigate();
   const onButtonClicked = () => {
     navigate("/restaurants");
@@ -36,7 +37,7 @@ export default function HeaderList(props: Props) {
         <ButtonElement>Chefs</ButtonElement>
         <br />
       </ListMenue>
-      <hr />
+      <Hr />
       <div onClick={() => props.CloseMenueList(false)}>
         <Footer />
       </div>

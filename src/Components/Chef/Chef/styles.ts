@@ -18,11 +18,9 @@ export const Description = styled.div`
 export const Container = styled.div`
     width:100%;
     overflow-x: scroll;
-
 `
 export const Text = styled.p`
-    width: 95%;
-    height: 252px;
+    width: 94%;
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 200;
@@ -33,7 +31,6 @@ export const Text = styled.p`
     color: #000000;
 `
 export const ChefName = styled.div`
-    height: 47px;
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 400;
@@ -50,7 +47,7 @@ export const ChefName = styled.div`
     margin-top: -45px;
     z-index: 1;
     position: absolute;
-    width: 100%;
+    width: 90%;
 }
 `
 

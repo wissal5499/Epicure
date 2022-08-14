@@ -6,7 +6,5 @@ import HomePageDesktop from "./HomePageDesktop/HomePageDesktop";
 export default function HomePage() {
   const windowSize = SetWindowSize();
 
-  return (
-    <div>{windowSize < 400 ? <HomePageMobile /> : <HomePageDesktop />}</div>
-  );
+  return <div></div>;
 }

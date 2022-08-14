@@ -1,0 +1,39 @@
+.carousel .thumbs-wrapper{
+    margin: 0;
+    overflow: hidden;
+}
+.carousel .slide {
+    min-width: 100%;
+    margin: 0;
+    text-align: left;
+}
+/*
+
+.carousel .slide.img{
+    max-width: 50%;
+    width: auto;
+}
+image{
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+
+
+.carousel{
+    display: flex;
+}
+
+.carousel .slide{
+    background-color: blue;
+    height: 80vh;
+}
+
+
+image{
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+*/

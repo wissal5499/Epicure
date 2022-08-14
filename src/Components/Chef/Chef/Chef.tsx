@@ -1,5 +1,5 @@
 import React from "react";
-import chefs from "../../../constants/JsonFolder/chefs.json";
+import Restaurants from "../../../constants/JsonFolder/chefs.json";
 import { Title, Description, Text, ChefName, Container } from "./styles";
 
 export default function Chef() {
@@ -7,11 +7,15 @@ export default function Chef() {
     <div>
       <Container>
         <Title>Chef of the week:</Title>
-        <Description>
-          <img src={chefs.chefs[0].image} alt="" />
-          <ChefName>{chefs.chefs[0].name}</ChefName>
-          <Text>{chefs.chefs[0].description}</Text>
-        </Description>
+        <div>
+          {Restaurants.chefs.map((element, key) => (
+            <Description key={key}>
+              <img src={Restaurants.chefs[0].image} alt="" />
+              <ChefName>{Restaurants.chefs[0].name}</ChefName>
+              <Text>{Restaurants.chefs[0].description}</Text>
+            </Description>
+          ))}
+        </div>
       </Container>
     </div>
   );

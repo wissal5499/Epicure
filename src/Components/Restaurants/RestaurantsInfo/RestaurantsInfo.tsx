@@ -73,7 +73,7 @@ export default function RestaurantsInfo() {
       <div>
         <br />
         {MealsArray.map((element, key) => (
-          <div>
+          <div key={key}>
             <img src={element.image} alt="rest image" />
             <MealDetails>
               <MealName>{element.name}</MealName>

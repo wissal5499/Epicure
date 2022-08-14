@@ -25,47 +25,48 @@
             "Ingredients":"Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
             "price":"88",
             "type":"Breakfast",
-            "image":""}
-        ]},
-        {"name": "Kab Kem",
-        "location":"Kab Kem",
-        "image":"./Images/Restaurants/Kab kem.svg",
-        "Category":"New","OpeningHours":""},
+            "image":""}]
+          
+        },
+            {"name": "Kab Kem",
+            "location":"Kab Kem",
+            "image":"./Images/Restaurants/Kab kem.svg",
+            "Category":"New","OpeningHours":""},
 
-        {"name": "Messa",
-        "location":"Aviv Moshe",
-        "image":"./Images/Restaurants/Messa.svg",
-        "Category":"New","OpeningHours":""},
+            {"name": "Messa",
+            "location":"Aviv Moshe",
+            "image":"./Images/Restaurants/Messa.svg",
+            "Category":"New","OpeningHours":""},
 
-        {"name": "Nitan Thai",
-        "location":"Shahaf Shabtay",
-        "image":"./Images/Restaurants/nithan-thai.svg",
-        "Category":"Most Popular","OpeningHours":""},
+            {"name": "Nitan Thai",
+            "location":"Shahaf Shabtay",
+            "image":"./Images/Restaurants/nithan-thai.svg",
+            "Category":"Most Popular","OpeningHours":""},
 
-        {"name": "Tiger Lilly",
-        "location":"Yanir Green",
-        "image":"./Images/Restaurants/tiger-lily.svg",
-        "Category":"Most Popular","OpeningHours":""},
+            {"name": "Tiger Lilly",
+            "location":"Yanir Green",
+            "image":"./Images/Restaurants/tiger-lily.svg",
+            "Category":"Most Popular","OpeningHours":""},
 
-        {"name": "Ya Pan",
-        "location":"Yuval Ben Moshe",
-        "image":"./Images/Restaurants/Yapan.svg",
-        "Category":"Most Popular","OpeningHours":""},
+            {"name": "Ya Pan",
+            "location":"Yuval Ben Moshe",
+            "image":"./Images/Restaurants/Yapan.svg",
+            "Category":"Most Popular","OpeningHours":""},
 
-        {"name": "Claro",
-        "location":"Ran Shmueli",
-        "image":"./Images/Restaurants/claro 2.svg",
-        "Category":"","OpeningHours":""},
+            {"name": "Claro",
+            "location":"Ran Shmueli",
+            "image":"./Images/Restaurants/claro 2.svg",
+            "Category":"","OpeningHours":""},
 
-        {"name": "Kab Kem",
-        "location":"Yariv Malili",
-        "image":"./Images/Restaurants/Kab kem 2.svg",
-        "Category":"Open Now","OpeningHours":""},
+            {"name": "Kab Kem",
+            "location":"Yariv Malili",
+            "image":"./Images/Restaurants/Kab kem 2.svg",
+            "Category":"Open Now","OpeningHours":""},
 
-        {"name": "Messa",
-        "location":"Aviv Moshe",
-        "image":"./Images/Restaurants/Messa 2.svg",
-        "Category":"Open Now","OpeningHours":""}
+            {"name": "Messa",
+            "location":"Aviv Moshe",
+            "image":"./Images/Restaurants/Messa 2.svg",
+            "Category":"Open Now","OpeningHours":""}
     ]
 }
 

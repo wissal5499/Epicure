@@ -4,10 +4,9 @@ export const BagContainer= styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    width: 100%;
+    width: 95%;
     height: 218px;
-    top: 35px;
+    top: 5%;
     background: #FFFFFF;
     box-shadow: 2px 4px 10px rgba(175, 175, 175, 0.25);
     position: fixed;
@@ -34,7 +33,5 @@ export const Text=styled.p`
     letter-spacing: 1.97px;
     text-transform: uppercase;
     color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+
 ` 

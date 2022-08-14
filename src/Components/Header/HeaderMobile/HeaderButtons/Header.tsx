@@ -18,14 +18,21 @@ import {
 import SearchHeader from "../SearchHeader/SearchHeader";
 import { useNavigate } from "react-router-dom";
 
-export default function Header() {
-  const [openMenueList, setMenueList] = useState(false);
-  const [openSearchBox, setOpenSearch] = useState(false);
-  const [openBag, setOpenBag] = useState(false);
+interface Props {
+  openMenueList: boolean;
+  setMenueList: React.Dispatch<React.SetStateAction<boolean>>;
+  openSearchBox: boolean;
+  setOpenSearch: React.Dispatch<React.SetStateAction<boolean>>;
+  openBag: boolean;
+  setOpenBag: React.Dispatch<React.SetStateAction<boolean>>;
+}
+export default function Header(props: Props) {
+  // const [openSearchBox, setOpenSearch] = useState(false);
+  //  const [openBag, setOpenBag] = useState(false);
   const navigate = useNavigate();
 
   const onChangeClicked = () => {
-    setOpenBag(openBag === false ? true : false);
+    props.setOpenBag(props.openBag === false ? true : false);
   };
 
   const onBtnClicked = () => {
@@ -34,11 +41,11 @@ export default function Header() {
 
   return (
     <HeaderContainer>
-      {!openMenueList && !openSearchBox && (
+      {!props.openMenueList && !props.openSearchBox && (
         <NavContainer>
           <Headerbutton
             onClick={() => {
-              setMenueList(true);
+              props.setMenueList(true);
             }}
           >
             <img src={hambur} alt="hambur icon" />
@@ -49,7 +56,7 @@ export default function Header() {
           <GroupIcons>
             <Headerbutton
               onClick={() => {
-                setOpenSearch(true);
+                props.setOpenSearch(true);
               }}
             >
               <img src={searchURL} alt="search icon" />
@@ -63,11 +70,17 @@ export default function Header() {
           </GroupIcons>
         </NavContainer>
       )}
-      <div>{openMenueList && <HeaderList CloseMenueList={setMenueList} />}</div>
       <div>
-        {openSearchBox && <SearchHeader CloseSearchBox={setOpenSearch} />}
+        {props.openMenueList && (
+          <HeaderList CloseMenueList={props.setMenueList} />
+        )}
       </div>
-      <div>{openBag && <Bag CloseBagBox={setOpenBag} />}</div>
+      <div>
+        {props.openSearchBox && (
+          <SearchHeader CloseSearchBox={props.setOpenSearch} />
+        )}
+      </div>
+      <div>{props.openBag && <Bag CloseBagBox={props.setOpenBag} />}</div>
     </HeaderContainer>
   );
 }

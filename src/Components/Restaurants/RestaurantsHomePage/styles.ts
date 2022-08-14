@@ -14,14 +14,10 @@ export const Title = styled.p`
 `
 export const RestContainer =styled.div`
     display: flex;
-    flex-direction: row;
-    gap: 6%;
-    width: 100%;
-    height: 260px;
-    overflow-x: scroll;
+    flex-direction: row;    
+    gap: 20%;
 `
 export const RestElement = styled.div`
-    height: 250px;
     background: #F9F4EA;
     
 `

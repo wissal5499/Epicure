@@ -38,3 +38,7 @@ export const ButtonElement=styled.button`
     flex-grow: 0;
     text-align: left;
 `
+export const Hr=styled.hr`
+    width: 90%;
+    margin-left: -5%;
+`

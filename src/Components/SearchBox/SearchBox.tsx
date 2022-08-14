@@ -14,7 +14,7 @@ export default function SearchBox() {
       <SearchContainer>
         <Title>Epicure works with the top cheif restaurant in Tel Aviv</Title>
         <Searchbox>
-          <img id="serachIcon" src={searchURL} alt="search icon" />
+          <img src={searchURL} alt="search icon" />
           <InputText
             type="text"
             id="search"

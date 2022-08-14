@@ -1,5 +1,5 @@
 import React from "react";
-import meal from "../../constants/JsonFolder/meal.json";
+import Restaurants from "../../constants/JsonFolder/meal.json";
 import GoRestuarants from "../Buttons/GoToRestaurants";
 
 import {
@@ -10,28 +10,38 @@ import {
   MealDescription,
   MealPrice,
   IsSpicy,
+  MealDescriptionContainer,
 } from "./styles";
 
-export default function DishesHomePage() {
+interface Props {
+  setMenueList: React.Dispatch<React.SetStateAction<boolean>>;
+  setOpenSearch: React.Dispatch<React.SetStateAction<boolean>>;
+  setOpenBag: React.Dispatch<React.SetStateAction<boolean>>;
+}
+export default function DishesHomePage(props: Props) {
   return (
     <div>
       <Title>Signature Dish Of:</Title>
       <MealContainer>
-        {meal.resturants.map((element, key) =>
+        {Restaurants.resturants.map((element, key) =>
           element.meals.map((element, key) => (
             <MealElement key={key}>
               <img src={element.image} alt="meal image" />
-              <div style={{ marginLeft: "5%" }}>
+              <MealDescriptionContainer style={{ marginLeft: "5%" }}>
                 <MealName>{element.name}</MealName>
                 <MealDescription>{element.description}</MealDescription>
                 <IsSpicy src={element.spicy} alt="" />
                 <MealPrice>₪{element.price}</MealPrice>
-              </div>
+              </MealDescriptionContainer>
             </MealElement>
           ))
         )}
       </MealContainer>
-      <GoRestuarants />
+      <GoRestuarants
+        setMenueList={props.setMenueList}
+        setOpenSearch={props.setOpenSearch}
+        setOpenBag={props.setOpenBag}
+      />
     </div>
   );
 }

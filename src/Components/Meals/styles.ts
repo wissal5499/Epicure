@@ -20,9 +20,9 @@ export const MealContainer =styled.div`
     overflow-x: scroll;
 `
 export const MealElement = styled.div`
-    height: 390px;
+    height: 385px;
     background: #F9F4EA;
-    
+    margin-bottom: 15px;    
 `
 export const MealName = styled.p`
     width: 100%;
@@ -73,3 +73,6 @@ export const IsSpicy = styled.img`
     top: 22.68%;
     bottom: 4.26%;
 `
+export const MealDescriptionContainer=styled.div`
+    marginLeft: 5%;
+    `

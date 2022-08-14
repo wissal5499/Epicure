@@ -24,10 +24,12 @@ export const Searchbox = styled.div`
     display: flex;
     flex-direction: row;
     gap: 5%;
-    border: 1px solid black;
-    width: 250%;
-    margin-left: 5%;
-    border-radius: 5%;
+    width: 270%;
+    height: 60px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
     `
 
 export const Title=styled.p`

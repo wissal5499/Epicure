@@ -17,7 +17,6 @@ export const Title = styled.p`
 `
 export const Text = styled.p`
     width: 85%;
-    height: 280px;
     left: 19px;
     top: 3266px;
     font-family: 'Helvetica Neue';
@@ -27,4 +26,13 @@ export const Text = styled.p`
     line-height: 28px;
     letter-spacing: 2.14px;
     color: #000000;
+`
+export const Container=styled.div`
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+`
+export const BodyContainer=styled.div`
+    background: #FAFAFA;
+    margin-buttom: 25px;
 `
