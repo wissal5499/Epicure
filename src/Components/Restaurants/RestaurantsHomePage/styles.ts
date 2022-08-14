@@ -12,14 +12,16 @@ export const Title = styled.p`
     text-transform: uppercase;
     color: #000000;
 `
-export const RestContainer =styled.div`
-    display: flex;
-    flex-direction: row;    
-    gap: 20%;
-`
 export const RestElement = styled.div`
+    padding-right: 20px;
+`
+export const RestDescription = styled.div`
     background: #F9F4EA;
-    
+    background: #F9F4EA;
+    width: 93%;
+    margin-top: -6%;
+    padding-top: 5px;
+    height: 85px;
 `
 export const RestName = styled.p`
     width: 70%;

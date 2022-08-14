@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DishesHomePage from "../../Meals/DishesHomePage";
+import DishesHomePage from "../../Dishes/DishesHomePage";
 import SearchBox from "../../SearchBox/SearchBox";
 import RestauransHomePage from "../../Restaurants/RestaurantsHomePage/RestuarantsHomePage";
 import DishCategory from "../../DishCategory/DishCategory";

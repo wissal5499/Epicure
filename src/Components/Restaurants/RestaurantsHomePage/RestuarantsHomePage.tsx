@@ -1,18 +1,18 @@
 import React from "react";
 import rest from "../../../constants/JsonFolder/Restaurant.json";
 import GoRestuarants from "../../Buttons/GoToRestaurants";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import { settings } from "../../../constants/SliderSettings/settings";
 import Slider from "react-slick";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./rest.css";
 
 import {
   Title,
-  RestContainer,
   RestElement,
   RestName,
   RestLocation,
+  RestDescription,
 } from "./styles";
 
 interface Props {
@@ -21,32 +21,22 @@ interface Props {
   setOpenBag: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export default function RestaurantsHomePage(props: Props) {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1.5,
-    slidesToScroll: 1,
-  };
-
   return (
     <div>
       <Title>popular restaurant in epicure:</Title>
-      <Carousel>
+      <Slider {...settings}>
         {rest.Restaurants.map((element, key) => (
-          <RestContainer>
-            <RestElement key={key}>
-              <div>
-                <img src="./Images/claro.svg" alt="restaurant image" />
-              </div>
+          <RestElement key={key}>
+            <img src="./Images/claro.svg" alt="restaurant image" />
+            <RestDescription>
               <div style={{ marginLeft: "5%" }}>
                 <RestName>{element.name}</RestName>
                 <RestLocation>{element.location}</RestLocation>
               </div>
-            </RestElement>
-          </RestContainer>
+            </RestDescription>
+          </RestElement>
         ))}
-      </Carousel>
+      </Slider>
 
       <GoRestuarants
         setMenueList={props.setMenueList}
