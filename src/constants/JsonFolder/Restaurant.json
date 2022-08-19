@@ -3,7 +3,7 @@
         {"name": "Claro",
         "location":"Ran Shmueli",
         "image":"./Images/Restaurants/Claro.svg",
-        "Category":"New",
+        "Category":"new",
         "OpeningHours":"Open now",
         "meals" : [
             {"name":"Pad Ki Mao",
@@ -31,27 +31,27 @@
             {"name": "Kab Kem",
             "location":"Kab Kem",
             "image":"./Images/Restaurants/Kab kem.svg",
-            "Category":"New","OpeningHours":""},
+            "Category":"new","OpeningHours":""},
 
             {"name": "Messa",
             "location":"Aviv Moshe",
             "image":"./Images/Restaurants/Messa.svg",
-            "Category":"New","OpeningHours":""},
+            "Category":"new","OpeningHours":""},
 
             {"name": "Nitan Thai",
             "location":"Shahaf Shabtay",
             "image":"./Images/Restaurants/nithan-thai.svg",
-            "Category":"Most Popular","OpeningHours":""},
+            "Category":"popular","OpeningHours":""},
 
             {"name": "Tiger Lilly",
             "location":"Yanir Green",
             "image":"./Images/Restaurants/tiger-lily.svg",
-            "Category":"Most Popular","OpeningHours":""},
+            "Category":"popular","OpeningHours":""},
 
             {"name": "Ya Pan",
             "location":"Yuval Ben Moshe",
             "image":"./Images/Restaurants/Yapan.svg",
-            "Category":"Most Popular","OpeningHours":""},
+            "Category":"popular","OpeningHours":""},
 
             {"name": "Claro",
             "location":"Ran Shmueli",
@@ -61,12 +61,12 @@
             {"name": "Kab Kem",
             "location":"Yariv Malili",
             "image":"./Images/Restaurants/Kab kem 2.svg",
-            "Category":"Open Now","OpeningHours":""},
+            "Category":"open","OpeningHours":""},
 
             {"name": "Messa",
             "location":"Aviv Moshe",
             "image":"./Images/Restaurants/Messa 2.svg",
-            "Category":"Open Now","OpeningHours":""}
+            "Category":"open","OpeningHours":""}
     ]
 }
 

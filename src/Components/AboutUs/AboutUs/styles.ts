@@ -34,5 +34,15 @@ export const Container=styled.div`
 `
 export const BodyContainer=styled.div`
     background: #FAFAFA;
-    margin-buttom: 25px;
+    margin-bottom: 25px;
+`
+export const About=styled.div`
+    margin-bottom: 25px;
+    margin-left: 5%;
+`
+export const LogoContainer=styled.div`
+margin-bottom: 25px;
+margin-top: 25px;
+
+
 `

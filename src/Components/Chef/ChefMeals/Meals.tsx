@@ -1,5 +1,10 @@
 import React from "react";
 import chefs from "../../../constants/JsonFolder/chefs.json";
+import Slider from "react-slick";
+import { settings } from "../../../constants/SliderSettings/settings";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Meals.css";
 import {
   Title,
   MealContainer,
@@ -12,18 +17,20 @@ export default function Meals() {
   return (
     <div>
       <Title>Chef of the week:</Title>
-      <MealContainer>
+      <Slider {...settings}>
         {chefs.chefs.map((element, key) =>
           element.meals.map((element, key) => (
-            <MealDescription key={key}>
+            <div>
               <MealImage src={element.image} alt="meal image" />
-              <div style={{ background: "#F9F4EA" }}>
-                <MealName>{element.name}</MealName>
-              </div>
-            </MealDescription>
+              <MealContainer key={key}>
+                <MealDescription style={{ background: "#F9F4EA" }}>
+                  <MealName>{element.name}</MealName>
+                </MealDescription>
+              </MealContainer>
+            </div>
           ))
         )}
-      </MealContainer>
+      </Slider>
     </div>
   );
 }

@@ -33,8 +33,8 @@ export default function HomePageMobile(props: Props) {
         <DishCategory />
         <Chef />
         <Meals />
-        <AboutUs />
       </BodyContainer>
+      <AboutUs />
     </Container>
   );
 }

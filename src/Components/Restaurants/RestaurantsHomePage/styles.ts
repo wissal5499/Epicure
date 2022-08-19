@@ -17,10 +17,9 @@ export const RestElement = styled.div`
 `
 export const RestDescription = styled.div`
     background: #F9F4EA;
-    background: #F9F4EA;
     width: 93%;
     margin-top: -6%;
-    padding-top: 5px;
+    padding-top: 8px;
     height: 85px;
 `
 export const RestName = styled.p`

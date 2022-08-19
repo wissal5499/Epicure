@@ -14,15 +14,13 @@ export const Title=styled.p`
     text-transform: uppercase;
     color: #000000;
 `
-export const MealContainer=styled.div`
-    display: flex;
-    flex-direction: row;
-    gap:20px;
-    overflow-x: scroll;
 
+export const MealContainer=styled.div`
+    background: #F9F4EA;
+    width: 93%;
 `
 export const MealDescription=styled.div`
-
+    padding-top: 8px;
 `
 export const MealImage=styled.img`
     height: 152.34px;

@@ -17,12 +17,6 @@ export const MealContainer =styled.div`
     flex-direction: row;
     gap:5%;
     width:100%;
-    overflow-x: scroll;
-`
-export const MealElement = styled.div`
-    height: 385px;
-    background: #F9F4EA;
-    margin-bottom: 15px;    
 `
 export const MealName = styled.p`
     width: 100%;
@@ -68,11 +62,12 @@ export const MealPrice = styled.p`
     flex-grow: 0;
 `
 export const IsSpicy = styled.img`
-    left: 0%;
-    right: 10.13%;
-    top: 22.68%;
-    bottom: 4.26%;
+
 `
 export const MealDescriptionContainer=styled.div`
-    marginLeft: 5%;
+    background: #F9F4EA;
+    width: 93%;
+    margin-top: -6%;
+    padding-top: 8px;
+    height: 230px;
     `

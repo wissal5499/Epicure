@@ -1,5 +1,4 @@
 import React from "react";
-import { bagURL } from "../../../../constants/imagesURL.ts/bagURL";
 import { BagContainer, BagElements, Text } from "./styles";
 
 interface Props {

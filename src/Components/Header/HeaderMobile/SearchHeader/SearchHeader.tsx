@@ -10,6 +10,7 @@ import {
   SearchInput,
   InputText,
 } from "./styles";
+
 interface Props {
   CloseSearchBox: React.Dispatch<React.SetStateAction<boolean>>;
 }

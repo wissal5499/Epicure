@@ -27,8 +27,6 @@ interface Props {
   setOpenBag: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export default function Header(props: Props) {
-  // const [openSearchBox, setOpenSearch] = useState(false);
-  //  const [openBag, setOpenBag] = useState(false);
   const navigate = useNavigate();
 
   const onChangeClicked = () => {

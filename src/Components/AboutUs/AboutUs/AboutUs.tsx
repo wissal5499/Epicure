@@ -1,15 +1,22 @@
 import React from "react";
 import LogoSite from "../LogoSite/LogoSite";
 import Stores from "../Stores/Stores";
-import { Title, Text, Container, BodyContainer } from "./styles";
+import {
+  Title,
+  Text,
+  Container,
+  BodyContainer,
+  About,
+  LogoContainer,
+} from "./styles";
 
 export default function AboutUs() {
   return (
-    <div>
-      <BodyContainer>
-        <LogoSite />
-        <br />
-        <br />
+    <BodyContainer>
+      <About>
+        <LogoContainer>
+          <LogoSite />
+        </LogoContainer>
         <Container>
           <Stores />
           <Text>
@@ -22,9 +29,7 @@ export default function AboutUs() {
             justo fermentum bibendum no eu ipsum. Cras porta malesuada eros.
           </Text>
         </Container>
-      </BodyContainer>
-      <br />
-      <br />
-    </div>
+      </About>
+    </BodyContainer>
   );
 }

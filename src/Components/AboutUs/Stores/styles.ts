@@ -6,8 +6,6 @@ export const StoreContainer = styled.div`
     flex-direction: column;
     gap: 10px;
 `
-
-
 export const Text = styled.p`
     width: 130px;
     height: 20px;
@@ -24,7 +22,6 @@ export const Text = styled.p`
     align-self: stretch;
     flex-grow: 0;
 `
-
 export const StoreElement = styled.div`
     display: flex;
     flex-direction: row;
@@ -35,3 +32,5 @@ export const StoreElement = styled.div`
     border-radius: 10px;
     padding-left: 5px;
     `
+export const Image= styled.img`
+`

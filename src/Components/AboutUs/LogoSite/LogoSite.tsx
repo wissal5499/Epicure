@@ -1,9 +1,10 @@
 import React from "react";
+import { Logo, Image } from "./styles";
 
 export default function LogoSite() {
   return (
-    <div>
-      <img src="./Images/LogoSite.svg" alt="site logo" />
-    </div>
+    <Logo>
+      <Image src="./Images/LogoSite.svg" alt="site logo" />
+    </Logo>
   );
 }
