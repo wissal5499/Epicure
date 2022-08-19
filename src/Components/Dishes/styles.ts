@@ -61,13 +61,25 @@ export const MealPrice = styled.p`
     order: 1;
     flex-grow: 0;
 `
-export const IsSpicy = styled.img`
+export const CategoryImage = styled.img`
 
 `
-export const MealDescriptionContainer=styled.div`
+export const DishImage = styled.img`
+
+`
+export const DishContainer = styled.div`
+
+`
+export const DishDescriptionContainer =styled.div`
     background: #F9F4EA;
     width: 93%;
     margin-top: -6%;
     padding-top: 8px;
     height: 230px;
-    `
+`
+export const DishDescription =styled.div`
+
+`
+export const Container =styled.div`
+
+`

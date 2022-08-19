@@ -17,4 +17,7 @@ export const ButtonContainer = styled.div`
     display: flex;
     flex- direction;
     gap: 1%;
+    margin-top: 3%;
+`
+export const Image = styled.img`
 `

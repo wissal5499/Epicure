@@ -13,9 +13,8 @@ export const Title = styled.p`
     color: #000000;
 `
 export const Description = styled.div`
-
 `
-export const Container = styled.div`
+export const ChefContainer = styled.div`
     width:100%;
     overflow-x: scroll;
 `
@@ -48,7 +47,8 @@ export const ChefName = styled.div`
     z-index: 1;
     position: absolute;
     width: 90%;
-}
+`
+export const Image = styled.img`
 `
 
 

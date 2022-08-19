@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { ButtonContainer, GoRestuarants } from "./styles";
+import { ButtonContainer, GoRestuarants, Image } from "./styles";
 
 interface Props {
   setMenueList: React.Dispatch<React.SetStateAction<boolean>>;
@@ -18,11 +18,10 @@ export default function GoToRestaurants(props: Props) {
     props.setOpenBag(false);
     window.scrollTo(0, 0);
   };
-
   return (
     <ButtonContainer>
       <GoRestuarants onClick={onButtonClicked}>All Restaurants</GoRestuarants>
-      <img src={goRestuarants} alt="icon" />
+      <Image src={goRestuarants} alt="icon" />
     </ButtonContainer>
   );
 }

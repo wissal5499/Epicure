@@ -7,16 +7,10 @@ export const CategoryContainer = styled.div`
     align-items: center;
     gap: 32px;
     background: #FAFAFA;
-    width: 95%;
-}
+    margin-left: -15px;
 `
-
 export const Title = styled.p`
     width: 100%;
-    margin-left: 45%;
-    height: 35px;
-    left: 96px;
-    top: 1294px;
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 200;
@@ -25,13 +19,11 @@ export const Title = styled.p`
     letter-spacing: 1.25px;
     text-transform: uppercase;
     color: #000000;
+    text-align: center;
 `
 
 export const CategoryElement = styled.div`
-    width: 120px;
-    align-items: center;
     text-align: center;
-
 `
 export const Button = styled.div`
     border: none;
@@ -51,4 +43,6 @@ export const CategoryName = styled.p`
     flex: none;
     order: 1;
     flex-grow: 0;
+`
+export const Image = styled.img`
 `

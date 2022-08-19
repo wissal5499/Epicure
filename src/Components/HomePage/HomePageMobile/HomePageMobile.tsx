@@ -5,7 +5,7 @@ import RestauransHomePage from "../../Restaurants/RestaurantsHomePage/Restuarant
 import DishCategory from "../../DishCategory/DishCategory";
 import Chef from "../../Chef/Chef/Chef";
 import AboutUs from "../../AboutUs/AboutUs/AboutUs";
-import Meals from "../../Chef/ChefMeals/Meals";
+import Meals from "../../Chef/ChefRestaurants/Restaurants";
 import { Container, BodyContainer } from "./styles";
 
 interface Props {

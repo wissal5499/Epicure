@@ -1,19 +1,22 @@
 import React from "react";
-import Restaurants from "../../constants/JsonFolder/meal.json";
+import Restaurants from "../../constants/JsonFolder/Restaurant.json";
 import GoRestuarants from "../Buttons/GoToRestaurants";
 import { settings } from "../../constants/SliderSettings/settings";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./DishesHomePage.css";
-
 import {
   Title,
   MealName,
   MealDescription,
   MealPrice,
-  IsSpicy,
-  MealDescriptionContainer,
+  CategoryImage,
+  DishDescriptionContainer,
+  DishContainer,
+  DishImage,
+  DishDescription,
+  Container,
 } from "./styles";
 
 interface Props {
@@ -23,22 +26,22 @@ interface Props {
 }
 export default function DishesHomePage(props: Props) {
   return (
-    <div>
+    <Container>
       <Title>Signature Dish Of:</Title>
       <Slider {...settings}>
-        {Restaurants.resturants.map((element, key) =>
-          element.meals.map((element, key) => (
-            <div>
-              <img src={element.image} alt="meal image" />
-              <MealDescriptionContainer key={key}>
-                <div style={{ marginLeft: "5%" }}>
+        {Restaurants.Restaurants.map((element, key) =>
+          element.meals?.map((element, key) => (
+            <DishContainer key={key}>
+              <DishImage src={element.image} alt="meal image" />
+              <DishDescriptionContainer>
+                <DishDescription style={{ marginLeft: "5%" }}>
                   <MealName>{element.name}</MealName>
                   <MealDescription>{element.description}</MealDescription>
-                  <IsSpicy src={element.spicy} alt="" />
+                  <CategoryImage src={element.category} alt="" />
                   <MealPrice>₪{element.price}</MealPrice>
-                </div>
-              </MealDescriptionContainer>
-            </div>
+                </DishDescription>
+              </DishDescriptionContainer>
+            </DishContainer>
           ))
         )}
       </Slider>
@@ -47,6 +50,6 @@ export default function DishesHomePage(props: Props) {
         setOpenSearch={props.setOpenSearch}
         setOpenBag={props.setOpenBag}
       />
-    </div>
+    </Container>
   );
 }

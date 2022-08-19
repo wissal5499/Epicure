@@ -14,19 +14,24 @@ export const Title=styled.p`
     text-transform: uppercase;
     color: #000000;
 `
+export const Container=styled.div`
 
-export const MealContainer=styled.div`
+`
+export const Restaurant=styled.div`
+
+`
+export const RestContainer=styled.div`
     background: #F9F4EA;
     width: 93%;
 `
-export const MealDescription=styled.div`
+export const RestDescription=styled.div`
     padding-top: 8px;
 `
-export const MealImage=styled.img`
+export const RestImage=styled.img`
     height: 152.34px;
     order: 10;
 `
-export const MealName=styled.p`
+export const RestName=styled.p`
     width: 100%;
     height: 21px;
     font-family: 'Helvetica Neue';
