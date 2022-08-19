@@ -30,8 +30,6 @@ export const Button = styled.div`
     background-color: transparent;
 `
 export const CategoryName = styled.p`
-    width: 136px;
-    height: 35px;
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 200;

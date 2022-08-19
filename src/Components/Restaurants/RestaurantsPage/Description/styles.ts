@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 
-export const Container = styled.div`
-    margin-left: 5%;
-    margin-right: 5%;
-`
+
 export const RestImage= styled.img`
     width: 100%;
 `

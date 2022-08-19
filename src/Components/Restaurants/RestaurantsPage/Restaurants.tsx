@@ -9,7 +9,7 @@ import {
   AllRestaurants,
   NewRestaurants,
   MostPopularRestaurants,
-  OpeningHours,
+  OpeningRestaurants,
   Hr,
 } from "./styles";
 
@@ -18,7 +18,7 @@ export default function Restaurants() {
   const [RestaurantsArray, setRestaurantsArray] = useState(restArray);
   const [category, setCategory] = useState("all");
 
-  const onBtnClicked = (categoty: string) => {
+  const SetFilteredArray = (categoty: string) => {
     const newArray = restArray.filter((element) => {
       return element.Category == categoty;
     });
@@ -40,27 +40,29 @@ export default function Restaurants() {
           All
         </AllRestaurants>
         <NewRestaurants
-          onClick={() => onBtnClicked("new")}
+          onClick={() => SetFilteredArray("new")}
           activeCategory={category}
         >
           New
         </NewRestaurants>
         <MostPopularRestaurants
-          onClick={() => onBtnClicked("popular")}
+          onClick={() => SetFilteredArray("popular")}
           activeCategory={category}
         >
           Most Popular
         </MostPopularRestaurants>
-        <OpeningHours
-          onClick={() => onBtnClicked("open")}
+        <OpeningRestaurants
+          onClick={() => SetFilteredArray("open")}
           activeCategory={category}
         >
           Open Now
-        </OpeningHours>
+        </OpeningRestaurants>
       </ButtonContainer>
+
       <RestaurantsDescription
         RestarauntsArray={RestaurantsArray}
       ></RestaurantsDescription>
+
       <Hr />
     </Container>
   );

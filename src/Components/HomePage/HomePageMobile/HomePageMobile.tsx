@@ -19,7 +19,7 @@ export default function HomePageMobile(props: Props) {
     <Container>
       <SearchBox />
       <br />
-      <BodyContainer style={{ marginLeft: "5%" }}>
+      <BodyContainer>
         <RestauransHomePage
           setMenueList={props.setMenueList}
           setOpenSearch={props.setOpenSearch}

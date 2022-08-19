@@ -19,7 +19,6 @@ export const BagElements= styled.div`
     align-items: center;
     background: #FFFFFF;
     margin-top: 16%;
-    margin-right: 10%;
 `
 export const Text=styled.p`
     width: 90%;

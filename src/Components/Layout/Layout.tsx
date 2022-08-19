@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/HeaderMobile/HeaderButtons/Header";
 import HomePageMobile from "../HomePage/HomePageMobile/HomePageMobile";
-import RestaurantsInfo from "../Restaurants/RestaurantsInfo/RestaurantsInfo";
 import Restaurants from "../Restaurants/RestaurantsPage/Restaurants";
 import { Container } from "./styles";
 
@@ -35,7 +34,6 @@ export default function Layout() {
             }
           ></Route>
           <Route path="restaurants" element={<Restaurants />}></Route>
-          <Route path="restaurantsInfo" element={<RestaurantsInfo />}></Route>
         </Routes>
         <div style={{ marginLeft: "5%" }}>
           <Footer />

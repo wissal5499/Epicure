@@ -85,7 +85,7 @@ export const MostPopularRestaurants = styled.button <ButtonProps>`
     text-decoration-color: ${props=> props.activeCategory=='popular'? '#DE9200': "none"};
     font-weight: ${props=> props.activeCategory=='popular'? 'bold': "none"};
 `
-export const OpeningHours = styled.button<ButtonProps>`
+export const OpeningRestaurants = styled.button<ButtonProps>`
     background-color: transparent;
     border: none;
     height: 22px;

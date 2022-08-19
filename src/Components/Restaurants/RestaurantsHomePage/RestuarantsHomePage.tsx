@@ -6,13 +6,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./RestaurantsHomePage.css";
-
 import {
   Title,
   RestElement,
   RestName,
   RestLocation,
+  RestDescriptionContainer,
   RestDescription,
+  Image,
+  RestaurantContainer,
 } from "./styles";
 
 interface Props {
@@ -22,27 +24,26 @@ interface Props {
 }
 export default function RestaurantsHomePage(props: Props) {
   return (
-    <div>
+    <RestaurantContainer>
       <Title>popular restaurant in epicure:</Title>
       <Slider {...settings}>
         {rest.Restaurants.map((element, key) => (
           <RestElement key={key}>
-            <img src="./Images/claro.svg" alt="restaurant image" />
-            <RestDescription>
-              <div style={{ marginLeft: "5%" }}>
+            <Image src={element.image} alt="restaurant image" />
+            <RestDescriptionContainer>
+              <RestDescription>
                 <RestName>{element.name}</RestName>
                 <RestLocation>{element.location}</RestLocation>
-              </div>
-            </RestDescription>
+              </RestDescription>
+            </RestDescriptionContainer>
           </RestElement>
         ))}
       </Slider>
-
       <GoRestuarants
         setMenueList={props.setMenueList}
         setOpenSearch={props.setOpenSearch}
         setOpenBag={props.setOpenBag}
       />
-    </div>
+    </RestaurantContainer>
   );
 }

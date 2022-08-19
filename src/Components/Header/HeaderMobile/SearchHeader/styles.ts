@@ -22,12 +22,12 @@ export const SearchInput = styled.div`
     display: flex;
     flex-direction: row;
     gap: 5%;
-    width: 70%;
+    width: 78%;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
     padding: 5px;
-    margin-left: 6%;
+    margin-left: 5%;
     margin-top: 30px;
 
 `
