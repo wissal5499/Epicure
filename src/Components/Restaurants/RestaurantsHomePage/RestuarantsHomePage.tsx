@@ -5,6 +5,7 @@ import { settings } from "../../../constants/SliderSettings/settings";
 import { Props } from "../../../interfaces/SetFunctions";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
+import "./RestaurantsHomePage.css";
 import {
   Title,
   RestElement,

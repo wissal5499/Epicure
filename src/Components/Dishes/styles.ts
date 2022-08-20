@@ -65,7 +65,6 @@ export const CategoryImage = styled.img`
 
 `
 export const DishImage = styled.img`
-
 `
 export const DishContainer = styled.div`
 

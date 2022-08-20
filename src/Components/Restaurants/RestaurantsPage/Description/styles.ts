@@ -61,10 +61,4 @@ export const RestContainer= styled.div`
         margin: 0 auto;
         display: grid;
         grid-gap: 1rem;
-      
-      @media (min-width: 400px) 
-        grid-template-columns: repeat(2, 1fr);
-      
-      @media (min-width: 900px) {
-         grid-template-columns: repeat(3, 1fr);
 `

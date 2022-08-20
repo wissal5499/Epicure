@@ -6,7 +6,6 @@ export const Container = styled.div`
 export const RestaurantsContainer = styled.div`
     margin-left: 5%;
 `
-
 export const Title = styled.p`
     width: 100%;
     height: 5%;

@@ -4,7 +4,6 @@ export const Container =styled.div`
     display: flex;
     flex-direction: column;
     gap: 20%;
-    max-width: 375px;
 `
 export const BodyContainer =styled.div`
     display: flex;

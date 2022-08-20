@@ -41,8 +41,6 @@ export const About=styled.div`
     margin-left: 5%;
 `
 export const LogoContainer=styled.div`
-margin-bottom: 25px;
-margin-top: 25px;
-
-
+    margin-bottom: 25px;
+    margin-top: 25px;
 `
