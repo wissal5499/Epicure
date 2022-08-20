@@ -21,7 +21,7 @@ export default function Layout() {
         openBag={openBag}
         setOpenBag={setOpenBag}
       />
-      <Container style={{ width: "window.innerWidth" }}>
+      <Container>
         <Routes>
           <Route
             path=""
@@ -35,6 +35,7 @@ export default function Layout() {
           ></Route>
           <Route path="restaurants" element={<Restaurants />}></Route>
         </Routes>
+
         <FooterContainer>
           <Footer />
         </FooterContainer>

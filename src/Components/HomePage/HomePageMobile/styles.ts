@@ -12,5 +12,5 @@ export const BodyContainer =styled.div`
     gap: 20px;
     margin-left: 5%;
     margin-rigth: 5%;
-
+    margin-top:20px;
 `

@@ -18,7 +18,6 @@ export default function HomePageMobile(props: Props) {
   return (
     <Container>
       <SearchBox />
-      <br />
       <BodyContainer>
         <RestauransHomePage
           setMenueList={props.setMenueList}
