@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 
-
 export const RestImage= styled.img`
     width: 95%;
 `
 export const Restaurant= styled.div`
 `
-
 export const RestDetailsContainer= styled.div`
     width: 95%;
     display: flex;

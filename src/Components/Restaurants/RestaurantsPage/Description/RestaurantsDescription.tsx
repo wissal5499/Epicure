@@ -9,14 +9,14 @@ import {
   Restaurant,
 } from "./styles";
 
-interface Rest {
+interface Restaurants {
   name: string;
   location: string;
   image: string;
 }
 
 interface Props {
-  RestarauntsArray: Array<Rest>;
+  RestarauntsArray: Array<Restaurants>;
 }
 
 export default function RestaurantsDescription(props: Props) {

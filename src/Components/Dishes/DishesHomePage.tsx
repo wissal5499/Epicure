@@ -2,6 +2,7 @@ import React from "react";
 import Restaurants from "../../constants/JsonFolder/Restaurant.json";
 import GoRestuarants from "../Buttons/GoToRestaurants";
 import { settings } from "../../constants/SliderSettings/settings";
+import { Props } from "../../interfaces/SetFunctions";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,11 +20,6 @@ import {
   Container,
 } from "./styles";
 
-interface Props {
-  setMenueList: React.Dispatch<React.SetStateAction<boolean>>;
-  setOpenSearch: React.Dispatch<React.SetStateAction<boolean>>;
-  setOpenBag: React.Dispatch<React.SetStateAction<boolean>>;
-}
 export default function DishesHomePage(props: Props) {
   return (
     <Container>

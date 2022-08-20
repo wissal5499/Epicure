@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BackGround = styled.div`
+export const Background = styled.div`
     width: 100%;
     height: 273px;
     background: url('./Images/hero-picture.svg');

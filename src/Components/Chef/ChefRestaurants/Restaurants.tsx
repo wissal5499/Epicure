@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import { settings } from "../../../constants/SliderSettings/settings";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Restaurants.css";
 import {
   Title,
   RestContainer,

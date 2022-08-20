@@ -7,12 +7,7 @@ import Chef from "../../Chef/Chef/Chef";
 import AboutUs from "../../AboutUs/AboutUs/AboutUs";
 import Meals from "../../Chef/ChefRestaurants/Restaurants";
 import { Container, BodyContainer } from "./styles";
-
-interface Props {
-  setMenueList: React.Dispatch<React.SetStateAction<boolean>>;
-  setOpenSearch: React.Dispatch<React.SetStateAction<boolean>>;
-  setOpenBag: React.Dispatch<React.SetStateAction<boolean>>;
-}
+import { Props } from "../../../interfaces/SetFunctions";
 
 export default function HomePageMobile(props: Props) {
   return (

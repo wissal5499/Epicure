@@ -1,7 +1,7 @@
 import React from "react";
 import { searchURL } from "../../constants/imagesURL.ts/searchURL";
 import {
-  BackGround,
+  Background,
   SearchContainer,
   Searchbox,
   Title,
@@ -11,7 +11,7 @@ import {
 
 export default function SearchBox() {
   return (
-    <BackGround>
+    <Background>
       <SearchContainer>
         <Title>Epicure works with the top cheif restaurant in Tel Aviv</Title>
         <Searchbox>
@@ -23,6 +23,6 @@ export default function SearchBox() {
           />
         </Searchbox>
       </SearchContainer>
-    </BackGround>
+    </Background>
   );
 }

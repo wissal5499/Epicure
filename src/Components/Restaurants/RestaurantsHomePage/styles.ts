@@ -13,11 +13,9 @@ export const Title = styled.p`
     color: #000000;
 `
 export const RestElement = styled.div`
-    padding-right: 20px;
 `
 export const Image = styled.img`
     padding-right: 20px;
-    width: 245px;
     height: 151.8px;
 `
 export const RestDescriptionContainer = styled.div`

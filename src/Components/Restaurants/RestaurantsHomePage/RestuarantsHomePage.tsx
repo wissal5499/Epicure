@@ -2,10 +2,9 @@ import React from "react";
 import rest from "../../../constants/JsonFolder/Restaurant.json";
 import GoRestuarants from "../../Buttons/GoToRestaurants";
 import { settings } from "../../../constants/SliderSettings/settings";
+import { Props } from "../../../interfaces/SetFunctions";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./RestaurantsHomePage.css";
 import {
   Title,
   RestElement,
@@ -17,11 +16,6 @@ import {
   RestaurantContainer,
 } from "./styles";
 
-interface Props {
-  setMenueList: React.Dispatch<React.SetStateAction<boolean>>;
-  setOpenSearch: React.Dispatch<React.SetStateAction<boolean>>;
-  setOpenBag: React.Dispatch<React.SetStateAction<boolean>>;
-}
 export default function RestaurantsHomePage(props: Props) {
   return (
     <RestaurantContainer>

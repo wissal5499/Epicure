@@ -41,6 +41,7 @@ export const RestName=styled.p`
     padding-left: 5%;
 `
 export const Container=styled.div`
+    margin-bottom: 30px;
 `
 export const ChefRestaurants=styled.div`
 `
