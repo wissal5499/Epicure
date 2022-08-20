@@ -16,7 +16,8 @@ export const Searchheader = styled.div`
 `
 export const SearchBox = styled.div`
     height: 250px;
-;
+`
+export const XIcon = styled.img`
 `
 export const SearchInput = styled.div`
     display: flex;
@@ -31,9 +32,12 @@ export const SearchInput = styled.div`
     margin-top: 30px;
 
 `
-export const SearchElement = styled.button`
+export const SearchButton = styled.button`
     border: none;
     background-color: transparent;
+`
+export const SearchIcon = styled.img`
+
 `
 export const Text = styled.p`
     width: 63px;

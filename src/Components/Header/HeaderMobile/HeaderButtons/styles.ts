@@ -39,3 +39,7 @@ export const LogoButton=styled.button`
     border: none;
     background-color: transparent;
 `
+export const Icon=styled.img`
+    border: none;
+    background-color: transparent;
+`

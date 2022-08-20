@@ -4,11 +4,13 @@ import { XURL } from "../../../../constants/imagesURL.ts/XURL";
 import {
   SearchContainer,
   Searchheader,
-  SearchElement,
+  SearchButton,
   Text,
   SearchBox,
   SearchInput,
+  SearchIcon,
   InputText,
+  XIcon,
 } from "./styles";
 
 interface Props {
@@ -19,19 +21,19 @@ export default function SearchHeader(props: Props) {
   return (
     <SearchContainer>
       <Searchheader>
-        <SearchElement
+        <SearchButton
           className="X__Element"
           onClick={() => {
             props.CloseSearchBox(false);
           }}
         >
-          <img src={XURL} alt="X icon"></img>
-        </SearchElement>
+          <XIcon src={XURL} alt="X icon" />
+        </SearchButton>
         <Text>Search</Text>
       </Searchheader>
       <SearchBox>
         <SearchInput>
-          <img id="serachIcon" src={searchURL} alt="search icon" />
+          <SearchIcon id="serachIcon" src={searchURL} alt="search icon" />
           <InputText
             type="text"
             id="search"

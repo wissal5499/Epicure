@@ -7,16 +7,16 @@ import { sitelogo } from "../../../../constants/imagesURL.ts/sitelogoURL";
 import { searchURL } from "../../../../constants/imagesURL.ts/searchURL";
 import { userURL } from "../../../../constants/imagesURL.ts/userURL";
 import { bagURL } from "../../../../constants/imagesURL.ts/bagURL";
-
+import SearchHeader from "../SearchHeader/SearchHeader";
+import { useNavigate } from "react-router-dom";
 import {
   HeaderContainer,
   NavContainer,
   GroupIcons,
   Headerbutton,
   LogoButton,
+  Icon,
 } from "./styles";
-import SearchHeader from "../SearchHeader/SearchHeader";
-import { useNavigate } from "react-router-dom";
 
 interface Props {
   openMenueList: boolean;
@@ -28,13 +28,11 @@ interface Props {
 }
 export default function Header(props: Props) {
   const navigate = useNavigate();
-
-  const onChangeClicked = () => {
-    props.setOpenBag(props.openBag === false ? true : false);
-  };
-
   const onBtnClicked = () => {
     navigate("/");
+  };
+  const onChangeClicked = () => {
+    props.setOpenBag(props.openBag === false ? true : false);
   };
 
   return (
@@ -46,10 +44,10 @@ export default function Header(props: Props) {
               props.setMenueList(true);
             }}
           >
-            <img src={hambur} alt="hambur icon" />
+            <Icon src={hambur} alt="hambur icon" />
           </Headerbutton>
           <LogoButton onClick={onBtnClicked} style={{ marginLeft: "24%" }}>
-            <img src={sitelogo} alt="logo icon" />
+            <Icon src={sitelogo} alt="logo icon" />
           </LogoButton>
           <GroupIcons>
             <Headerbutton
@@ -57,28 +55,24 @@ export default function Header(props: Props) {
                 props.setOpenSearch(true);
               }}
             >
-              <img src={searchURL} alt="search icon" />
+              <Icon src={searchURL} alt="search icon" />
             </Headerbutton>
             <Headerbutton>
-              <img src={userURL} alt="user icon" />
+              <Icon src={userURL} alt="user icon" />
             </Headerbutton>
             <Headerbutton onClick={onChangeClicked}>
-              <img src={bagURL} alt="bag icon" />
+              <Icon src={bagURL} alt="bag icon" />
             </Headerbutton>
           </GroupIcons>
         </NavContainer>
       )}
-      <div>
-        {props.openMenueList && (
-          <HeaderList CloseMenueList={props.setMenueList} />
-        )}
-      </div>
-      <div>
-        {props.openSearchBox && (
-          <SearchHeader CloseSearchBox={props.setOpenSearch} />
-        )}
-      </div>
-      <div>{props.openBag && <Bag CloseBagBox={props.setOpenBag} />}</div>
+      {props.openMenueList && (
+        <HeaderList CloseMenueList={props.setMenueList} />
+      )}
+      {props.openSearchBox && (
+        <SearchHeader CloseSearchBox={props.setOpenSearch} />
+      )}
+      {props.openBag && <Bag CloseBagBox={props.setOpenBag} />}
     </HeaderContainer>
   );
 }

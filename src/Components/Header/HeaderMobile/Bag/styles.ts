@@ -12,7 +12,6 @@ export const BagContainer= styled.div`
     position: fixed;
     z-index: 1;
 ` 
-
 export const BagElements= styled.div`
     display: flex;
     flex-direction: column;
@@ -32,5 +31,6 @@ export const Text=styled.p`
     letter-spacing: 1.97px;
     text-transform: uppercase;
     color: #000000;
-
 ` 
+export const BagImage=styled.img`
+`

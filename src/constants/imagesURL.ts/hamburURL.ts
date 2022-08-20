@@ -1,1 +1,1 @@
-export const hambur = "./Images/hambur.svg";
+export const hambur = "./Images/Header/hambur.svg";

@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/HeaderMobile/HeaderButtons/Header";
 import HomePageMobile from "../HomePage/HomePageMobile/HomePageMobile";
 import Restaurants from "../Restaurants/RestaurantsPage/Restaurants";
-import { Container } from "./styles";
+import { Container, FooterContainer } from "./styles";
 
 export default function Layout() {
   const [openMenueList, setMenueList] = useState(false);
@@ -35,9 +35,9 @@ export default function Layout() {
           ></Route>
           <Route path="restaurants" element={<Restaurants />}></Route>
         </Routes>
-        <div style={{ marginLeft: "5%" }}>
+        <FooterContainer>
           <Footer />
-        </div>
+        </FooterContainer>
       </Container>
     </BrowserRouter>
   );

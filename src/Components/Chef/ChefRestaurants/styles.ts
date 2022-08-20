@@ -14,18 +14,13 @@ export const Title=styled.p`
     text-transform: uppercase;
     color: #000000;
 `
-export const Container=styled.div`
-
-`
-export const Restaurant=styled.div`
-
-`
 export const RestContainer=styled.div`
-    background: #F9F4EA;
     width: 93%;
 `
 export const RestDescription=styled.div`
     padding-top: 8px;
+    background: #F9F4EA;
+
 `
 export const RestImage=styled.img`
     height: 152.34px;
@@ -44,6 +39,9 @@ export const RestName=styled.p`
     margin-top: -0.5%;
     height: 60px;
     padding-left: 5%;
-
+`
+export const Container=styled.div`
+`
+export const ChefRestaurants=styled.div`
 `
 

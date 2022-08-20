@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
+`
+export const RestaurantsContainer = styled.div`
     margin-left: 5%;
-    margin-right: 5%;
 `
 
 export const Title = styled.p`

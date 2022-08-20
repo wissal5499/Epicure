@@ -34,10 +34,10 @@ export default function DishesHomePage(props: Props) {
             <DishContainer key={key}>
               <DishImage src={element.image} alt="meal image" />
               <DishDescriptionContainer>
-                <DishDescription style={{ marginLeft: "5%" }}>
+                <DishDescription>
                   <MealName>{element.name}</MealName>
                   <MealDescription>{element.description}</MealDescription>
-                  <CategoryImage src={element.category} alt="" />
+                  <CategoryImage src={element.category} alt="category" />
                   <MealPrice>₪{element.price}</MealPrice>
                 </DishDescription>
               </DishDescriptionContainer>

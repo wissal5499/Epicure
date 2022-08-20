@@ -6,6 +6,7 @@ import {
   Searchbox,
   Title,
   InputText,
+  SearchIcon,
 } from "./styles";
 
 export default function SearchBox() {
@@ -14,7 +15,7 @@ export default function SearchBox() {
       <SearchContainer>
         <Title>Epicure works with the top cheif restaurant in Tel Aviv</Title>
         <Searchbox>
-          <img src={searchURL} alt="search icon" />
+          <SearchIcon src={searchURL} alt="search icon" />
           <InputText
             type="text"
             id="search"

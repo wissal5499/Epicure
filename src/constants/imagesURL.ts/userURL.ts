@@ -1,1 +1,1 @@
-export const userURL = './Images/user.svg';
+export const userURL = './Images/Header/user.svg';

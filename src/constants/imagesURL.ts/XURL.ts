@@ -1,1 +1,1 @@
-export const XURL = './Images/close.svg';
+export const XURL = './Images/Header/close.svg';

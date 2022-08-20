@@ -10,17 +10,17 @@
             "description":"Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
             "price": 88,
             "image":"./Images/claro.svg",
-            "category":"./Images/SpicySmall.svg"},
+            "category":"./Images/DishesCategory/SpicySmall.svg"},
             {"name":"Garbanzo Frito",
             "description":"Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
             "price": 78,
             "image":"./Images/claro.svg",
-            "category":"./Images/VegitarianSmall.svg"},
+            "category":"./Images/DishesCategory/VegitarianSmall.svg"},
             {"name":"Garbanzo Frito",
             "description":"Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
             "price": 78,
             "image":"./Images/claro.svg",
-            "category":"./Images/VeganSmall.svg"}
+            "category":"./Images/DishesCategory/VeganSmall.svg"}
             ]
         },
             {"name": "Kab Kem",

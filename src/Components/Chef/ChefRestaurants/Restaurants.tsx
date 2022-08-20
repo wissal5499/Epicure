@@ -12,12 +12,12 @@ import {
   RestImage,
   RestName,
   Container,
-  Restaurant,
+  ChefRestaurants,
 } from "./styles";
 
 export default function Restaurants() {
   return (
-    <Restaurant>
+    <ChefRestaurants>
       <Title>Chef of the week:</Title>
       <Slider {...settings}>
         {chefs.chefs.map((element, key) =>
@@ -25,7 +25,7 @@ export default function Restaurants() {
             <Container key={key}>
               <RestImage src={element.image} alt="rest image" />
               <RestContainer>
-                <RestDescription style={{ background: "#F9F4EA" }}>
+                <RestDescription>
                   <RestName>{element.name}</RestName>
                 </RestDescription>
               </RestContainer>
@@ -33,6 +33,6 @@ export default function Restaurants() {
           ))
         )}
       </Slider>
-    </Restaurant>
+    </ChefRestaurants>
   );
 }

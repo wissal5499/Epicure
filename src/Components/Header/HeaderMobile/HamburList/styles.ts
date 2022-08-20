@@ -7,13 +7,13 @@ export const HeaderContainer = styled.div`
     background-color: white;
     padding-left: 5%;
     width: 100%;
-
 `
-export const Headerbutton=styled.button`
+export const Closebutton=styled.button`
     border: none;
     background-color: transparent;
     padding-left: 10px;
     padding-top: 9px;
+    margin-bottom: 20px;
 `
 export const ListMenue=styled.div`
     display: flex;
@@ -21,7 +21,7 @@ export const ListMenue=styled.div`
     width: 50%;
     align-items: left;
     gap: 20px;
-
+    margin-bottom: 30px;
 `
 export const ButtonElement=styled.button`
     border: none;
@@ -39,6 +39,11 @@ export const ButtonElement=styled.button`
     text-align: left;
 `
 export const Hr=styled.hr`
-    width: 90%;
+    width: 100%;
     margin-left: -5%;
+    margin-bottom: 30px;
+`
+export const XIcon=styled.img`
+`
+export const FotterContainer=styled.div`
 `

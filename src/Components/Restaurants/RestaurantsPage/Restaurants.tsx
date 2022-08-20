@@ -10,6 +10,7 @@ import {
   NewRestaurants,
   MostPopularRestaurants,
   OpeningRestaurants,
+  RestaurantsContainer,
   Hr,
 } from "./styles";
 
@@ -28,42 +29,44 @@ export default function Restaurants() {
 
   return (
     <Container>
-      <Title>RESTAURANTS</Title>
-      <ButtonContainer>
-        <AllRestaurants
-          onClick={() => {
-            setRestaurantsArray(restArray);
-            setCategory("all");
-          }}
-          activeCategory={category}
-        >
-          All
-        </AllRestaurants>
-        <NewRestaurants
-          onClick={() => SetFilteredArray("new")}
-          activeCategory={category}
-        >
-          New
-        </NewRestaurants>
-        <MostPopularRestaurants
-          onClick={() => SetFilteredArray("popular")}
-          activeCategory={category}
-        >
-          Most Popular
-        </MostPopularRestaurants>
-        <OpeningRestaurants
-          onClick={() => SetFilteredArray("open")}
-          activeCategory={category}
-        >
-          Open Now
-        </OpeningRestaurants>
-      </ButtonContainer>
+      <RestaurantsContainer>
+        <Title>RESTAURANTS</Title>
+        <ButtonContainer>
+          <AllRestaurants
+            onClick={() => {
+              setRestaurantsArray(restArray);
+              setCategory("all");
+            }}
+            activeCategory={category}
+          >
+            All
+          </AllRestaurants>
+          <NewRestaurants
+            onClick={() => SetFilteredArray("new")}
+            activeCategory={category}
+          >
+            New
+          </NewRestaurants>
+          <MostPopularRestaurants
+            onClick={() => SetFilteredArray("popular")}
+            activeCategory={category}
+          >
+            Most Popular
+          </MostPopularRestaurants>
+          <OpeningRestaurants
+            onClick={() => SetFilteredArray("open")}
+            activeCategory={category}
+          >
+            Open Now
+          </OpeningRestaurants>
+        </ButtonContainer>
 
-      <RestaurantsDescription
-        RestarauntsArray={RestaurantsArray}
-      ></RestaurantsDescription>
+        <RestaurantsDescription
+          RestarauntsArray={RestaurantsArray}
+        ></RestaurantsDescription>
 
-      <Hr />
+        <Hr />
+      </RestaurantsContainer>
     </Container>
   );
 }

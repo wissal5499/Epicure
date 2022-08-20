@@ -78,7 +78,7 @@ export const DishDescriptionContainer =styled.div`
     height: 230px;
 `
 export const DishDescription =styled.div`
-
+margin-left: 5%;
 `
 export const Container =styled.div`
 

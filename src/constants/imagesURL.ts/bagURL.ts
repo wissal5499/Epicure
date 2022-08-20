@@ -1,1 +1,1 @@
-export const bagURL = "./Images/bag.svg";
+export const bagURL = "./Images/Header/bag.svg";

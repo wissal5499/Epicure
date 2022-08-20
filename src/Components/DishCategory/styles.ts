@@ -21,7 +21,6 @@ export const Title = styled.p`
     color: #000000;
     text-align: center;
 `
-
 export const CategoryElement = styled.div`
     text-align: center;
 `

@@ -55,7 +55,6 @@ export const Searchbox = styled.div`
         width: 450px;
         margin-top: -30px;
     `
-
 export const Title=styled.p`
     height: 64px;
     font-family: 'Helvetica Neue';
@@ -91,5 +90,6 @@ export const InputText=styled.input`
     border: none;
     outline: none;
     width: 100%;
-    
+`
+export const SearchIcon=styled.img`
 `

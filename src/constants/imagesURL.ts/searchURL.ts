@@ -1,1 +1,1 @@
-export const searchURL='./Images/search.svg';
+export const searchURL='./Images/Header/search.svg';

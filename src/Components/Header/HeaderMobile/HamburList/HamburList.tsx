@@ -4,10 +4,12 @@ import { XURL } from "../../../../constants/imagesURL.ts/XURL";
 import { useNavigate } from "react-router-dom";
 import {
   HeaderContainer,
-  Headerbutton,
+  Closebutton,
   ListMenue,
   ButtonElement,
+  FotterContainer,
   Hr,
+  XIcon,
 } from "./styles";
 
 interface Props {
@@ -16,31 +18,28 @@ interface Props {
 
 export default function HamburList(props: Props) {
   const navigate = useNavigate();
-  const onButtonClicked = () => {
+  const GoToRestaurantsPage = () => {
     navigate("/restaurants");
     props.CloseMenueList(false);
   };
   return (
     <HeaderContainer>
-      <Headerbutton
+      <Closebutton
         className="X__Element"
         onClick={() => {
           props.CloseMenueList(false);
         }}
       >
-        <img src={XURL} alt="X icon"></img>
-      </Headerbutton>
-      <br />
-      <br />
+        <XIcon src={XURL} alt="X icon" />
+      </Closebutton>
       <ListMenue>
-        <ButtonElement onClick={onButtonClicked}>Restaurants</ButtonElement>
+        <ButtonElement onClick={GoToRestaurantsPage}>Restaurants</ButtonElement>
         <ButtonElement>Chefs</ButtonElement>
-        <br />
       </ListMenue>
       <Hr />
-      <div onClick={() => props.CloseMenueList(false)}>
+      <FotterContainer onClick={() => props.CloseMenueList(false)}>
         <Footer />
-      </div>
+      </FotterContainer>
     </HeaderContainer>
   );
 }

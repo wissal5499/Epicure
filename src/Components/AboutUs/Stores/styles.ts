@@ -31,6 +31,6 @@ export const StoreElement = styled.div`
     height: 60px;
     border-radius: 10px;
     padding-left: 5px;
-    `
+`
 export const Image= styled.img`
 `

@@ -1,1 +1,1 @@
-export const sitelogo ="./Images/Logo.svg";
+export const sitelogo ="./Images/Header/Logo.svg";
