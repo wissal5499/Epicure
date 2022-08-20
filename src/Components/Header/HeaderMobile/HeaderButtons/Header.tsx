@@ -28,10 +28,11 @@ interface Props {
 }
 export default function Header(props: Props) {
   const navigate = useNavigate();
-  const onBtnClicked = () => {
+
+  const GoToHomePage = () => {
     navigate("/");
   };
-  const onChangeClicked = () => {
+  const SetOpenBag = () => {
     props.setOpenBag(props.openBag === false ? true : false);
   };
 
@@ -46,9 +47,11 @@ export default function Header(props: Props) {
           >
             <Icon src={hambur} alt="hambur icon" />
           </Headerbutton>
-          <LogoButton onClick={onBtnClicked} style={{ marginLeft: "24%" }}>
+
+          <LogoButton onClick={GoToHomePage}>
             <Icon src={sitelogo} alt="logo icon" />
           </LogoButton>
+
           <GroupIcons>
             <Headerbutton
               onClick={() => {
@@ -60,7 +63,7 @@ export default function Header(props: Props) {
             <Headerbutton>
               <Icon src={userURL} alt="user icon" />
             </Headerbutton>
-            <Headerbutton onClick={onChangeClicked}>
+            <Headerbutton onClick={SetOpenBag}>
               <Icon src={bagURL} alt="bag icon" />
             </Headerbutton>
           </GroupIcons>

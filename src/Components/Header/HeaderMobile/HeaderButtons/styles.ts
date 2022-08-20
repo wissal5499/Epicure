@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const HeaderContainer = styled.div`
-
 `
 export const NavContainer = styled.div`
     display: flex;
@@ -12,7 +11,6 @@ export const NavContainer = styled.div`
     margin-left: 5%;
 `
 export const GroupIcons = styled.div`
-
 `
 export const Headerbutton=styled.button`
     border: none;
@@ -38,6 +36,7 @@ export const ButtonElement=styled.button`
 export const LogoButton=styled.button`
     border: none;
     background-color: transparent;
+    margin-left: 24%;
 `
 export const Icon=styled.img`
     border: none;

@@ -3,7 +3,7 @@ import Footer from "../../../Footer/Footer";
 import { XURL } from "../../../../constants/imagesURL.ts/XURL";
 import { useNavigate } from "react-router-dom";
 import {
-  HeaderContainer,
+  HamburContainer,
   Closebutton,
   ListMenue,
   ButtonElement,
@@ -23,23 +23,25 @@ export default function HamburList(props: Props) {
     props.CloseMenueList(false);
   };
   return (
-    <HeaderContainer>
+    <HamburContainer>
       <Closebutton
-        className="X__Element"
         onClick={() => {
           props.CloseMenueList(false);
         }}
       >
         <XIcon src={XURL} alt="X icon" />
       </Closebutton>
+
       <ListMenue>
         <ButtonElement onClick={GoToRestaurantsPage}>Restaurants</ButtonElement>
         <ButtonElement>Chefs</ButtonElement>
       </ListMenue>
+
       <Hr />
+
       <FotterContainer onClick={() => props.CloseMenueList(false)}>
         <Footer />
       </FotterContainer>
-    </HeaderContainer>
+    </HamburContainer>
   );
 }

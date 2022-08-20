@@ -22,7 +22,6 @@ export default function SearchHeader(props: Props) {
     <SearchContainer>
       <Searchheader>
         <SearchButton
-          className="X__Element"
           onClick={() => {
             props.CloseSearchBox(false);
           }}
@@ -33,7 +32,7 @@ export default function SearchHeader(props: Props) {
       </Searchheader>
       <SearchBox>
         <SearchInput>
-          <SearchIcon id="serachIcon" src={searchURL} alt="search icon" />
+          <SearchIcon src={searchURL} alt="search icon" />
           <InputText
             type="text"
             id="search"

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const HeaderContainer = styled.div`
+export const HamburContainer = styled.div`
     position:fixed;
     z-index: 1;
     background-color: white;

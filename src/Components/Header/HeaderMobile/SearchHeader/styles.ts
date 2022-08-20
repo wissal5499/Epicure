@@ -37,7 +37,6 @@ export const SearchButton = styled.button`
     background-color: transparent;
 `
 export const SearchIcon = styled.img`
-
 `
 export const Text = styled.p`
     width: 63px;
