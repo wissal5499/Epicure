@@ -20,9 +20,10 @@ export const RestDetailsContainer= styled.div`
     flex-grow: 0;
     margin-top: -4px;
     margin-bottom: 10px;
+    margin-left: 2.5%;
 `
 export const RestDetails= styled.div`
-    margin-left: 4%;
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     gap: 4%;
@@ -39,6 +40,7 @@ export const RestName= styled.p`
     flex: none;
     order: 0;
     flex-grow: 0;   
+    text-align: left;
 `
 export const RestLocation= styled.p`
     height: 30px;
@@ -52,7 +54,7 @@ export const RestLocation= styled.p`
     flex: none;
     order: 1;
     flex-grow: 0;
-
+    text-align: left;
 `
 export const RestContainer= styled.div`
         padding-right: 3px;
@@ -61,4 +63,8 @@ export const RestContainer= styled.div`
         margin: 0 auto;
         display: grid;
         grid-gap: 1rem;
+`
+export const Restaurantbtn= styled.button`
+    border: none;
+    background-color: transparent;
 `

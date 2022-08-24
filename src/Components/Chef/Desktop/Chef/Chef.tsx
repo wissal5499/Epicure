@@ -1,5 +1,5 @@
 import React from "react";
-import Restaurants from "../../../constants/JsonFolder/chefs.json";
+import Restaurants from "../../../../constants/JsonFolder/chefs.json";
 import {
   Title,
   Description,
@@ -15,8 +15,10 @@ export default function Chef() {
       <Title>Chef of the week:</Title>
       {Restaurants.chefs.map((element, key) => (
         <Description key={key}>
-          <Image src={element.image} alt="" />
-          <ChefName>{element.name}</ChefName>
+          <div>
+            <Image src={element.image} alt="" />
+            <ChefName>{element.name}</ChefName>
+          </div>
           <Text>{element.description}</Text>
         </Description>
       ))}

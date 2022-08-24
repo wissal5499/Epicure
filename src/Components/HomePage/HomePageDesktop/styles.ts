@@ -1,0 +1,9 @@
+import styled from "styled-components";
+
+export const Container =styled.div`
+    max-width:1440px
+`
+export const BodyContainer =styled.div`
+    margin-left : 8%;
+
+`

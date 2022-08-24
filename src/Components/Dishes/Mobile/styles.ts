@@ -62,12 +62,12 @@ export const MealPrice = styled.p`
     flex-grow: 0;
 `
 export const CategoryImage = styled.img`
-
 `
 export const DishImage = styled.img`
+width: 245px;
+height: 152px;
 `
 export const DishContainer = styled.div`
-
 `
 export const DishDescriptionContainer =styled.div`
     background: #F9F4EA;

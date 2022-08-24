@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ButtonContainer, GoRestuarants, Image } from "./styles";
-import { Props } from "../../interfaces/SetFunctions";
+import { Props } from "../../../interfaces/SetFunctions";
 
 export default function GoToRestaurants(props: Props) {
   const goRestuarants = "./Images/Go.svg";

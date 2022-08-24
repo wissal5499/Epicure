@@ -1,9 +1,5 @@
 import React from "react";
-import chefs from "../../../constants/JsonFolder/chefs.json";
-import Slider from "react-slick";
-import { settings } from "../../../constants/SliderSettings/settings";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import chefs from "../../../../constants/JsonFolder/chefs.json";
 import {
   Title,
   RestContainer,
@@ -12,13 +8,14 @@ import {
   RestName,
   Container,
   ChefRestaurants,
+  ChefContainer,
 } from "./styles";
 
 export default function Restaurants() {
   return (
-    <ChefRestaurants>
-      <Title>Chef of the week:</Title>
-      <Slider {...settings}>
+    <ChefContainer>
+      <Title>Yossi’s Restaurants</Title>
+      <ChefRestaurants>
         {chefs.chefs.map((element, key) =>
           element.restaurant.map((element, key) => (
             <Container key={key}>
@@ -31,7 +28,7 @@ export default function Restaurants() {
             </Container>
           ))
         )}
-      </Slider>
-    </ChefRestaurants>
+      </ChefRestaurants>
+    </ChefContainer>
   );
 }

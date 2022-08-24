@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import restaurant from "../../../constants/JsonFolder/Restaurant.json";
+import { useSelector } from "react-redux";
+//import restaurant from "../../../constants/JsonFolder/Restaurant.json";
 import RestaurantsDescription from "./Description/RestaurantsDescription";
 import {
   Container,
@@ -15,12 +16,13 @@ import {
 } from "./styles";
 
 export default function Restaurants() {
-  const restArray = restaurant.Restaurants;
-  const [RestaurantsArray, setRestaurantsArray] = useState(restArray);
+  const restaurants = useSelector((state: any) => state.restaurants.value);
+  //  const restArray = restaurants;
+  const [RestaurantsArray, setRestaurantsArray] = useState(restaurants);
   const [category, setCategory] = useState("all");
 
   const SetFilteredArray = (categoty: string) => {
-    const newArray = restArray.filter((element) => {
+    const newArray = restaurants.filter((element: any) => {
       return element.Category == categoty;
     });
     setRestaurantsArray(newArray);
@@ -34,7 +36,7 @@ export default function Restaurants() {
         <ButtonContainer>
           <AllRestaurants
             onClick={() => {
-              setRestaurantsArray(restArray);
+              setRestaurantsArray(restaurants);
               setCategory("all");
             }}
             activeCategory={category}

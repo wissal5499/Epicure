@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "../Footer/Footer";
-import Header from "../Header/HeaderMobile/HeaderButtons/Header";
-import HomePageMobile from "../HomePage/HomePageMobile/HomePageMobile";
-import Restaurants from "../Restaurants/RestaurantsPage/Restaurants";
+import Footer from "../../Footer/Mobile/Footer";
+import Header from "../../Header/HeaderMobile/HeaderButtons/Header";
+import HomePageMobile from "../../HomePage/HomePageMobile/HomePageMobile";
+import RestaurantsInfo from "../../Restaurants/RestaurantsInfo/RestaurantsInfo";
+import Restaurants from "../../Restaurants/RestaurantsPage/Restaurants";
 import { Container, FooterContainer } from "./styles";
 
 export default function Layout() {
@@ -21,7 +22,7 @@ export default function Layout() {
         openBag={openBag}
         setOpenBag={setOpenBag}
       />
-      <Container>
+      <Container style={{ width: "window.innerWidth" }}>
         <Routes>
           <Route
             path=""
@@ -34,8 +35,8 @@ export default function Layout() {
             }
           ></Route>
           <Route path="restaurants" element={<Restaurants />}></Route>
+          <Route path="restaurantsInfo" element={<RestaurantsInfo />}></Route>
         </Routes>
-
         <FooterContainer>
           <Footer />
         </FooterContainer>

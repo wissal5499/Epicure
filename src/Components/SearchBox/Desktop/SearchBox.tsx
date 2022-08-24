@@ -1,5 +1,5 @@
 import React from "react";
-import { searchURL } from "../../constants/imagesURL.ts/searchURL";
+import { searchURL } from "../../../constants/imagesURL.ts/searchURL";
 import {
   Background,
   SearchContainer,

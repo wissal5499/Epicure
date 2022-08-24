@@ -1,12 +1,6 @@
 import React from "react";
-import Restaurants from "../../constants/JsonFolder/Restaurant.json";
-import GoRestuarants from "../Buttons/GoToRestaurants";
-import { settings } from "../../constants/SliderSettings/settings";
-import { Props } from "../../interfaces/SetFunctions";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./DishesHomePage.css";
+import Restaurants from "../../../constants/JsonFolder/Restaurant.json";
+
 import {
   Title,
   MealName,
@@ -18,16 +12,17 @@ import {
   DishImage,
   DishDescription,
   Container,
+  DishElement,
 } from "./styles";
 
-export default function DishesHomePage(props: Props) {
+export default function DishesHomePage() {
   return (
     <Container>
       <Title>Signature Dish Of:</Title>
-      <Slider {...settings}>
-        {Restaurants.Restaurants.map((element, key) =>
+      <DishContainer>
+        {Restaurants.Restaurants.slice(0, 3).map((element, key) =>
           element.meals?.map((element, key) => (
-            <DishContainer key={key}>
+            <DishElement key={key}>
               <DishImage src={element.image} alt="meal image" />
               <DishDescriptionContainer>
                 <DishDescription>
@@ -37,15 +32,10 @@ export default function DishesHomePage(props: Props) {
                   <MealPrice>₪{element.price}</MealPrice>
                 </DishDescription>
               </DishDescriptionContainer>
-            </DishContainer>
+            </DishElement>
           ))
         )}
-      </Slider>
-      <GoRestuarants
-        setMenueList={props.setMenueList}
-        setOpenSearch={props.setOpenSearch}
-        setOpenBag={props.setOpenBag}
-      />
+      </DishContainer>
     </Container>
   );
 }

@@ -1,11 +1,12 @@
 import React from "react";
-import rest from "../../../constants/JsonFolder/Restaurant.json";
-import GoRestuarants from "../../Buttons/GoToRestaurants";
+//import rest from "../../../constants/JsonFolder/Restaurant.json";
+import GoRestuarants from "../../Buttons/Mobile/GoToRestaurants";
 import { settings } from "../../../constants/SliderSettings/settings";
 import { Props } from "../../../interfaces/SetFunctions";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "./RestaurantsHomePage.css";
+import { useSelector } from "react-redux";
 import {
   Title,
   RestElement,
@@ -18,11 +19,13 @@ import {
 } from "./styles";
 
 export default function RestaurantsHomePage(props: Props) {
+  const restaurants = useSelector((state: any) => state.restaurants.value);
+
   return (
     <RestaurantContainer>
       <Title>popular restaurant in epicure:</Title>
       <Slider {...settings}>
-        {rest.Restaurants.map((element, key) => (
+        {restaurants.map((element: any, key: number) => (
           <RestElement key={key}>
             <Image src={element.image} alt="restaurant image" />
             <RestDescriptionContainer>

@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../../Footer/Footer";
+import Footer from "../../../Footer/Mobile/Footer";
 import { XURL } from "../../../../constants/imagesURL.ts/XURL";
 import { useNavigate } from "react-router-dom";
 import {
