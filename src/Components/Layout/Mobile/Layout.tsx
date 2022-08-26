@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "../../Footer/Mobile/Footer";
 import Header from "../../Header/HeaderMobile/HeaderButtons/Header";
 import HomePageMobile from "../../HomePage/HomePageMobile/HomePageMobile";
+import DishInfo from "../../Restaurants/RestaurantsInfo/DishesType/DishInfo/DishInfo";
 import RestaurantsInfo from "../../Restaurants/RestaurantsInfo/RestaurantsInfo";
 import Restaurants from "../../Restaurants/RestaurantsPage/Restaurants";
 import { Container, FooterContainer } from "./styles";
@@ -36,6 +37,7 @@ export default function Layout() {
           ></Route>
           <Route path="restaurants" element={<Restaurants />}></Route>
           <Route path="restaurantsInfo" element={<RestaurantsInfo />}></Route>
+          <Route path="dishInfo" element={<DishInfo />}></Route>
         </Routes>
         <FooterContainer>
           <Footer />

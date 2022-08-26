@@ -1,6 +1,4 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-// import rest from "../../constants/JsonFolder/Restaurant.json";
-// const initialState = rest;
 
 export const restaurantsSlice = createSlice({
   name: "restaurants",
