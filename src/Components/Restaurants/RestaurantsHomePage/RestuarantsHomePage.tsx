@@ -27,10 +27,10 @@ export default function RestaurantsHomePage(props: Props) {
       <Slider {...settings}>
         {restaurants.map((element: any, key: number) => (
           <RestElement key={key}>
-            <Image src={element.image} alt="restaurant image" />
+            <Image src={element.image_src} alt="restaurant image" />
             <RestDescriptionContainer>
               <RestDescription>
-                <RestName>{element.name}</RestName>
+                <RestName>{element.restaurantName}</RestName>
                 <RestLocation>{element.location}</RestLocation>
               </RestDescription>
             </RestDescriptionContainer>

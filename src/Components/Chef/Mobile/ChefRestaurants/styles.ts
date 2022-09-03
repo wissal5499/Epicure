@@ -24,6 +24,7 @@ export const RestDescription=styled.div`
 `
 export const RestImage=styled.img`
     height: 152.34px;
+    width: 93%;
     order: 10;
 `
 export const RestName=styled.p`

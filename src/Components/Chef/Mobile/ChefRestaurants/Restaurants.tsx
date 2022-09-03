@@ -1,5 +1,4 @@
 import React from "react";
-import chefs from "../../../../constants/JsonFolder/chefs.json";
 import Slider from "react-slick";
 import { settings } from "../../../../constants/SliderSettings/settings";
 import "slick-carousel/slick/slick.css";
@@ -13,24 +12,33 @@ import {
   Container,
   ChefRestaurants,
 } from "./styles";
+import { useSelector } from "react-redux";
+
+export interface Props {
+  chefName: String;
+}
 
 export default function Restaurants() {
+  const restaurants = useSelector((state: any) => state.restaurants.value);
+  // console.log(props.chefName);
+  // const FilteredArray = restaurants.filter((res: any, key: Number) => {
+  //   return res.chefName == props.chefName;
+  // });
+
   return (
     <ChefRestaurants>
       <Title>Chef of the week:</Title>
       <Slider {...settings}>
-        {chefs.chefs.map((element, key) =>
-          element.restaurant.map((element, key) => (
-            <Container key={key}>
-              <RestImage src={element.image} alt="rest image" />
-              <RestContainer>
-                <RestDescription>
-                  <RestName>{element.name}</RestName>
-                </RestDescription>
-              </RestContainer>
-            </Container>
-          ))
-        )}
+        {restaurants.map((element: any, key: any) => (
+          <Container key={key}>
+            <RestImage src={element.image_src} alt="rest image" />
+            <RestContainer>
+              <RestDescription>
+                <RestName>{element.restaurantName}</RestName>
+              </RestDescription>
+            </RestContainer>
+          </Container>
+        ))}
       </Slider>
     </ChefRestaurants>
   );

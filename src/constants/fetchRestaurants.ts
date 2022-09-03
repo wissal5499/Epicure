@@ -33,46 +33,5 @@ export async function fetchRestaurants() {
             Category:"new",
             OpeningHours:""},
 
-            {name: "Messa",
-            location:"Aviv Moshe",
-            image:"./Images/Restaurants/Messa.svg",
-            Category:"new",
-            OpeningHours:""},
-
-            {name: "Nitan Thai",
-            location:"Shahaf Shabtay",
-            image:"./Images/Restaurants/nithan-thai.svg",
-            Category:"popular",
-            OpeningHours:""},
-/*
-            {"name": "Tiger Lilly",
-            "location":"Yanir Green",
-            "image":"./Images/Restaurants/tiger-lily.svg",
-            "Category":"popular",
-            "OpeningHours":""},
-
-            {"name": "Ya Pan",
-            "location":"Yuval Ben Moshe",
-            "image":"./Images/Restaurants/Yapan.svg",
-            "Category":"popular",
-            "OpeningHours":""},
-
-            {"name": "Claro",
-            "location":"Ran Shmueli",
-            "image":"./Images/Restaurants/claro 2.svg",
-            "Category":"",
-            "OpeningHours":""},
-*/
-            {name: "Kab Kem",
-            location:"Yariv Malili",
-            image:"./Images/Restaurants/Kab kem 2.svg",
-            Category:"open",
-            OpeningHours:""},
-
-            {name: "Messa",
-            location:"Aviv Moshe",
-            image:"./Images/Restaurants/Messa 2.svg",
-            Category:"open",
-            OpeningHours:""}      
     ]
   };

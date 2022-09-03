@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../../Footer/Mobile/Footer";
+import Footer from "../../../Footer/Mobile/FooterBtn";
 import { XURL } from "../../../../constants/imagesURL.ts/XURL";
 import { useNavigate } from "react-router-dom";
 import {
@@ -34,11 +34,16 @@ export default function HamburList(props: Props) {
 
       <ListMenue>
         <ButtonElement onClick={GoToRestaurantsPage}>Restaurants</ButtonElement>
-        <ButtonElement>Chefs</ButtonElement>
+        <ButtonElement
+          onClick={() => {
+            navigate("/chefs");
+            props.CloseMenueList(false);
+          }}
+        >
+          Chefs
+        </ButtonElement>
       </ListMenue>
-
       <Hr />
-
       <FotterContainer onClick={() => props.CloseMenueList(false)}>
         <Footer />
       </FotterContainer>

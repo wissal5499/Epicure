@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-//import restaurant from "../../../constants/JsonFolder/Restaurant.json";
 import RestaurantsDescription from "./Description/RestaurantsDescription";
 import {
   Container,
@@ -20,18 +19,18 @@ export default function Restaurants() {
   const [RestaurantsArray, setRestaurantsArray]: any = useState(restaurants);
   const [category, setCategory] = useState("all");
 
-  const SetFilteredArray = (categoty: string) => {
+  const SetFilteredArray = (category: string) => {
     const newArray = restaurants.filter((element: any) => {
-      return element.Category == categoty;
+      return element.category == category;
     });
     setRestaurantsArray(newArray);
-    setCategory(categoty);
+    setCategory(category);
   };
-  useEffect(() => {
-    RestaurantsArray?.length > 0
-      ? setRestaurantsArray(RestaurantsArray)
-      : setRestaurantsArray(restaurants);
-  });
+  // useEffect(() => {
+  //   RestaurantsArray?.length > 0
+  //     ? setRestaurantsArray(RestaurantsArray)
+  //     : setRestaurantsArray(restaurants);
+  // });
 
   return (
     <Container>

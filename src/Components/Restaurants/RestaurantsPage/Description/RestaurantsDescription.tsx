@@ -12,17 +12,17 @@ import {
 } from "./styles";
 
 export interface dishes {
-  name: string;
+  dishName: string;
   description: string;
   price: number;
-  image: string;
+  image_src: string;
 }
 export interface Restaurants {
-  name: string;
+  restaurantName: string;
   location: string;
-  image: string;
+  image_src: string;
   dishes: Array<dishes>;
-  OpeningHours: String;
+  status: String;
 }
 
 export interface Props {
@@ -40,10 +40,10 @@ export default function RestaurantsDescription(props: Props) {
       {props.RestarauntsArray.map((restaurant, key) => (
         <Restaurantbtn onClick={() => GoTORestaurantInfo(restaurant)}>
           <Restaurant key={key}>
-            <RestImage src={restaurant.image} alt="rest image" />
+            <RestImage src={restaurant.image_src} alt="rest image" />
             <RestDetailsContainer>
               <RestDetails>
-                <RestName>{restaurant.name}</RestName>
+                <RestName>{restaurant.restaurantName}</RestName>
                 <RestLocation>{restaurant.location}</RestLocation>
               </RestDetails>
             </RestDetailsContainer>

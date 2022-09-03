@@ -28,9 +28,6 @@ export const MealName = styled.p`
     line-height: 21px;
     letter-spacing: 2.67px;
     color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 `
 export const MealDescription = styled.p`
     width: 90%;;
@@ -42,9 +39,6 @@ export const MealDescription = styled.p`
     line-height: 20px;
     letter-spacing: 1.97px;
     color: #000000;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 `
 export const MealPrice = styled.p`
     width: 20%;
@@ -57,17 +51,13 @@ export const MealPrice = styled.p`
     text-align: center;
     letter-spacing: 1.97px;
     color: #000000;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-`
-export const CategoryImage = styled.img`
 `
 export const DishImage = styled.img`
-width: 245px;
-height: 152px;
+    width: 245px;
+    height: 152px;
 `
-export const DishContainer = styled.div`
+export const PriceContainer = styled.div`
+    margin-left: 35%;
 `
 export const DishDescriptionContainer =styled.div`
     background: #F9F4EA;
@@ -77,8 +67,11 @@ export const DishDescriptionContainer =styled.div`
     height: 230px;
 `
 export const DishDescription =styled.div`
-margin-left: 5%;
+    margin-left: 5%;
 `
 export const Container =styled.div`
-
+`
+export const DishContainer = styled.div`
+`
+export const CategoryImage = styled.img`
 `

@@ -19,13 +19,13 @@ export default function RestaurantsInfo() {
 
   return (
     <RestContainer>
-      <RestImage src={restaurantInfo.image} alt="rest image" />
+      <RestImage src={restaurantInfo.image_src} alt="rest image" />
       <RestDetails>
-        <RestName>{restaurantInfo.name}</RestName>
+        <RestName>{restaurantInfo.restaurantName}</RestName>
         <RestLocation>{restaurantInfo.location}</RestLocation>
         <OpenTime>
           <Clock src="./Images/Restaurants/clock.svg" alt="clock" />
-          <Status>{restaurantInfo.OpeningHours}</Status>
+          <Status>{restaurantInfo.status}</Status>
         </OpenTime>
       </RestDetails>
       <DishesType />

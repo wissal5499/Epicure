@@ -40,7 +40,7 @@ export default function DishesType() {
         <BreakFast onClick={() => setType("breakfast")} dishType={type}>
           Breakfast
         </BreakFast>
-        <Lanch onClick={() => setType("lanch")} dishType={type}>
+        <Lanch onClick={() => setType("lunch")} dishType={type}>
           Lanch
         </Lanch>
         <Dinner onClick={() => setType("dinner")} dishType={type}>
@@ -55,9 +55,9 @@ export default function DishesType() {
             GoToDishInfo(dish);
           }}
         >
-          <DishImage src={dish.image} alt="rest image" />
+          <DishImage src={dish.image_src} alt="rest image" />
           <DishDetails>
-            <DishName>{dish.name}</DishName>
+            <DishName>{dish.dishName}</DishName>
             <DishDescription>{dish.description}</DishDescription>
             <PriceContainer>
               <Price>₪{dish.price}</Price>

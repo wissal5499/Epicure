@@ -1,5 +1,4 @@
 import React from "react";
-//import Restaurants from "../../../constants/JsonFolder/Restaurant.json";
 import GoRestuarants from "../../Buttons/Mobile/GoToRestaurants";
 import { settings } from "../../../constants/SliderSettings/settings";
 import { Props } from "../../../interfaces/SetFunctions";
@@ -19,6 +18,7 @@ import {
   DishImage,
   DishDescription,
   Container,
+  PriceContainer,
 } from "./styles";
 
 export default function DishesHomePage(props: Props) {
@@ -31,13 +31,15 @@ export default function DishesHomePage(props: Props) {
         {restaurants.map((element: any, key: number) =>
           element.dishes?.map((element: any, key: number) => (
             <DishContainer key={key}>
-              <DishImage src={element.image} alt="meal image" />
+              <DishImage src={element.image_src} alt="meal image" />
               <DishDescriptionContainer>
                 <DishDescription>
-                  <MealName>{element.name}</MealName>
+                  <MealName>{element.dishName}</MealName>
                   <MealDescription>{element.description}</MealDescription>
-                  <CategoryImage src={element.category} alt="category" />
-                  <MealPrice>₪{element.price}</MealPrice>
+                  <PriceContainer>
+                    <CategoryImage src={element.category} alt="category" />
+                    <MealPrice>₪{element.price}</MealPrice>
+                  </PriceContainer>
                 </DishDescription>
               </DishDescriptionContainer>
             </DishContainer>
