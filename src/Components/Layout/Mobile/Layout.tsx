@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ChefAllPage from "../../Chef/Mobile/ChefAllPage/ChefAllPage";
 import ContactUS from "../../Footer/Mobile/ContactUS";
 import Footer from "../../Footer/Mobile/FooterBtn";
+import Policy from "../../Footer/Mobile/Policy";
+import TermOfUse from "../../Footer/Mobile/TermOfUse";
 import Header from "../../Header/HeaderMobile/HeaderButtons/Header";
 import HomePageMobile from "../../HomePage/HomePageMobile/HomePageMobile";
 import DishInfo from "../../Restaurants/RestaurantsInfo/DishesType/DishInfo/DishInfo";
@@ -42,8 +44,8 @@ export default function Layout() {
           <Route path="dishInfo" element={<DishInfo />}></Route>
           <Route path="chefs" element={<ChefAllPage />}></Route>
           <Route path="contactus" element={<ContactUS />}></Route>
-          <Route path="termofuse" element={<ContactUS />}></Route>
-          <Route path="policy" element={<ContactUS />}></Route>
+          <Route path="termofuse" element={<TermOfUse />}></Route>
+          <Route path="policy" element={<Policy />}></Route>
         </Routes>
         <FooterContainer>
           <Footer />

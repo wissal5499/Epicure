@@ -24,9 +24,9 @@ export const BreakFast = styled.button<ButtonProps>`
     flex: none;
     order: 1;
     flex-grow: 0;
-    text-decoration: ${props=> props.dishType=='breakfast'? 'underline': "none"};
-    text-decoration-color: ${props=> props.dishType=='breakfast'? '#DE9200': "none"};
-    font-weight: ${props=> props.dishType=='breakfast'? 'bold': "none"};
+    text-decoration: ${props=> props.dishType==='breakfast'? 'underline': "none"};
+    text-decoration-color: ${props=> props.dishType==='breakfast'? '#DE9200': "none"};
+    font-weight: ${props=> props.dishType==='breakfast'? 'bold': "none"};
 `
 export const Lanch = styled.button<ButtonProps>`
     background-color: transparent;
@@ -42,9 +42,9 @@ export const Lanch = styled.button<ButtonProps>`
     flex: none;
     order: 1;
     flex-grow: 0;
-    text-decoration: ${props=> props.dishType=='lanch'? 'underline': "none"};
-    text-decoration-color: ${props=> props.dishType=='lanch'? '#DE9200': "none"};
-    font-weight: ${props=> props.dishType=='lanch'? 'bold': "none"};
+    text-decoration: ${props=> props.dishType==='lunch'? 'underline': "none"};
+    text-decoration-color: ${props=> props.dishType==='lunch'? '#DE9200': "none"};
+    font-weight: ${props=> props.dishType==='lunch'? 'bold': "none"};
 `
 export const Dinner = styled.button<ButtonProps>`
     background-color: transparent;
@@ -60,9 +60,9 @@ export const Dinner = styled.button<ButtonProps>`
     flex: none;
     order: 2;
     flex-grow: 0;
-    text-decoration: ${props=> props.dishType=='dinner'? 'underline': "none"};
-    text-decoration-color: ${props=> props.dishType=='dinner'? '#DE9200': "none"};
-    font-weight: ${props=> props.dishType=='dinner'? 'bold': "none"};
+    text-decoration: ${props=> props.dishType==='dinner'? 'underline': "none"};
+    text-decoration-color: ${props=> props.dishType==='dinner'? '#DE9200': "none"};
+    font-weight: ${props=> props.dishType==='dinner'? 'bold': "none"};
 `
 export const DishImage= styled.img`
     width: 90%;

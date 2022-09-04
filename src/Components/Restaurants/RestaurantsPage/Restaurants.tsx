@@ -26,6 +26,14 @@ export default function Restaurants() {
     setRestaurantsArray(newArray);
     setCategory(category);
   };
+
+  const SetOpenRestArray = (status: string) => {
+    const newArray = restaurants.filter((element: any) => {
+      return element.status == status;
+    });
+    setRestaurantsArray(newArray);
+    setCategory("open");
+  };
   // useEffect(() => {
   //   RestaurantsArray?.length > 0
   //     ? setRestaurantsArray(RestaurantsArray)
@@ -59,7 +67,7 @@ export default function Restaurants() {
             Most Popular
           </MostPopularRestaurants>
           <OpeningRestaurants
-            onClick={() => SetFilteredArray("open")}
+            onClick={() => SetOpenRestArray("Open now")}
             activeCategory={category}
           >
             Open Now

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import Restaurants from "../ChefRestaurants/Restaurants";
 import {
@@ -14,7 +14,7 @@ export default function Chef() {
   const chefs = useSelector((state: any) => state.chefs.value);
 
   const FilteredArray = chefs.filter((chef: any, key: Number) => {
-    return chef.chef_of_the_week == true;
+    return chef.chef_of_the_week === true;
   });
 
   return (
@@ -28,7 +28,7 @@ export default function Chef() {
         </Description>
       ))}
 
-      <Restaurants />
+      <Restaurants chefArray={FilteredArray} />
     </ChefContainer>
   );
 }

@@ -14,22 +14,30 @@ import {
 } from "./styles";
 import { useSelector } from "react-redux";
 
-export interface Props {
+export interface Chefs {
   chefName: String;
 }
 
-export default function Restaurants() {
+export interface Props {
+  chefArray: Array<Chefs>;
+}
+
+export default function Restaurants(props: Props) {
   const restaurants = useSelector((state: any) => state.restaurants.value);
-  // console.log(props.chefName);
-  // const FilteredArray = restaurants.filter((res: any, key: Number) => {
-  //   return res.chefName == props.chefName;
-  // });
+
+  const chefName = props.chefArray.map((chef: any, key: Number) => {
+    return chef.chefName;
+  });
+
+  const FilteredArray = restaurants.filter((res: any, key: Number) => {
+    return res.chefName == chefName;
+  });
 
   return (
     <ChefRestaurants>
       <Title>Chef of the week:</Title>
       <Slider {...settings}>
-        {restaurants.map((element: any, key: any) => (
+        {FilteredArray.map((element: any, key: any) => (
           <Container key={key}>
             <RestImage src={element.image_src} alt="rest image" />
             <RestContainer>

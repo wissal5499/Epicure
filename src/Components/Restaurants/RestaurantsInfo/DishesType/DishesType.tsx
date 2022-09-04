@@ -27,7 +27,7 @@ export default function DishesType() {
 
   const FilteredDishesArray = restaurantInfo.dishes?.filter(
     (e: any, key: number) => {
-      return e.type == type;
+      return e.type === type;
     }
   );
   const GoToDishInfo = (dish: dishes) => {
