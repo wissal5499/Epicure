@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Restaurants } from "../RestaurantsPage/Description/RestaurantsDescription";
 import DishesType from "./DishesType/DishesType";
@@ -16,6 +16,7 @@ import {
 export default function RestaurantsInfo() {
   const location = useLocation();
   const restaurantInfo = location.state as Restaurants;
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <RestContainer>
