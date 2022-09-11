@@ -18,18 +18,14 @@ import {
   QuantityInput,
   AddToCart,
 } from "./styles";
+import { decrement, increment } from "./counterSlicer";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function DishInfo() {
   const location = useLocation();
   const dishInfo = location.state as dishes;
-  const [quantity, setQuantity] = useState(0);
-
-  const handleMinus = (event: any) => {
-    setQuantity(event.target.value--);
-  };
-  const handlePlus = (event: any) => {
-    setQuantity(event.target.value++);
-  };
+  const dispatch = useDispatch();
+  const quantity = useSelector((state: any) => state.quantity.value);
 
   return (
     <div>
@@ -41,11 +37,11 @@ export default function DishInfo() {
           <Container>
             <Title activePara="paragraph">Choose a side</Title>
             <OptionContainer>
-              <Input type="radio" name="" value="bread" /> 
+              <Input type="radio" name="radiobtn" value="bread" /> 
               <Label>White bread</Label>
             </OptionContainer>
             <OptionContainer>
-              <Input type="radio" name="" value="bread" /> 
+              <Input type="radio" name="radiobtn" value="bread" /> 
               <Label>Sticky rice</Label>
             </OptionContainer>
           </Container>
@@ -64,9 +60,14 @@ export default function DishInfo() {
 
         <Title activePara="paragraph">Quantity</Title>
         <ContainerBtn>
-          <ButtonPlusMunis onClick={handleMinus}>-</ButtonPlusMunis>
-          <QuantityInput value={quantity} type="text" />
-          <ButtonPlusMunis onClick={handlePlus}>+</ButtonPlusMunis>
+          <ButtonPlusMunis onClick={() => dispatch(decrement())}>
+            -
+          </ButtonPlusMunis>
+          <div>{quantity}</div>
+
+          <ButtonPlusMunis onClick={() => dispatch(increment())}>
+            +
+          </ButtonPlusMunis>
         </ContainerBtn>
 
         <AddToCart>Add to bag</AddToCart>
