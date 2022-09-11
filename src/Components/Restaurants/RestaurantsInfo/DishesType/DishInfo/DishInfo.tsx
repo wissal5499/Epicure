@@ -15,7 +15,6 @@ import {
   Container,
   ContainerBtn,
   ButtonPlusMunis,
-  QuantityInput,
   AddToCart,
 } from "./styles";
 import { decrement, increment } from "./counterSlicer";

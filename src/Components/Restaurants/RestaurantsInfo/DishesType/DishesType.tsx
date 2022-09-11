@@ -24,6 +24,7 @@ export default function DishesType() {
   const location = useLocation();
   const restaurantInfo = location.state as Restaurants;
   const [type, setType] = useState("breakfast");
+  const [openModal, setOpenModal] = useState(false);
 
   const FilteredDishesArray = restaurantInfo.dishes?.filter(
     (e: any, key: number) => {

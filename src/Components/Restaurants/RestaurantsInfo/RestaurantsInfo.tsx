@@ -16,7 +16,6 @@ import {
 export default function RestaurantsInfo() {
   const location = useLocation();
   const restaurantInfo = location.state as Restaurants;
-  const [openModal, setOpenModal] = useState(false);
 
   return (
     <RestContainer>
