@@ -7,6 +7,10 @@ import {
   Image,
 } from "./styles";
 
+/*********************************************
+ ***** I must get img path from the DB ********
+ ************ I will do this later *************/
+
 export default function DishCategory() {
   return (
     <CategoryContainer>
