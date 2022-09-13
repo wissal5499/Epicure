@@ -1,3 +1,7 @@
+/**************************************
+ ************* DON`T CHECK :)***********
+ ***************************************/
+
 import React, { useState } from "react";
 import { sitelogo } from "../../../../constants/imagesURL.ts/sitelogoURL";
 import { searchURL } from "../../../../constants/imagesURL.ts/searchURL";

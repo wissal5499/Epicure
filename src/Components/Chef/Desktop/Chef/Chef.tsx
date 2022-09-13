@@ -1,3 +1,7 @@
+/**************************************
+ ************* DON`T CHECK :)***********
+ ***************************************/
+
 import React from "react";
 import Restaurants from "../../../../constants/JsonFolder/chefs.json";
 import {

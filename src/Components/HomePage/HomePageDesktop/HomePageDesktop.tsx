@@ -1,3 +1,7 @@
+/**************************************
+ ************* DON`T CHECK :)***********
+ ***************************************/
+
 import React from "react";
 import AboutUs from "../../AboutUs/Desktop/AboutUs/AboutUs";
 import Chef from "../../Chef/Desktop/Chef/Chef";

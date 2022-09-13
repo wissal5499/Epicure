@@ -45,6 +45,7 @@ export const Title=styled.p`
     flex-grow: 0;
     padding-left: 10px;
     width: 290%;
+    position: static;
 `
 export const InputText=styled.input`
     background-color: transparent;
@@ -54,3 +55,15 @@ export const InputText=styled.input`
 `
 export const SearchIcon=styled.img`
 `
+export const SreachList=styled.div`
+    background: rgba(255,255,255,0.88);
+    margin-top: 12%;
+    z-index: 1;
+    position: absolute;
+    width: 85%;
+    margin-left: 7%;
+`
+export const List=styled.div`
+    text-align: center;
+`
+

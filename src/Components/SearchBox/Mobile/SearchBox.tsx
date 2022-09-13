@@ -8,34 +8,49 @@ import {
   Title,
   InputText,
   SearchIcon,
+  SreachList,
+  List,
 } from "./styles";
 import { useDispatch } from "react-redux";
 import { setRestaurants } from "../../Restaurants/restaurantsSlicer";
+import { setDishes } from "../../Dishes/dishesSlicer";
 
 export default function SearchBox() {
   const dispatch = useDispatch();
   const searchText = useRef<any>(null);
   const restaurants = useSelector((state: any) => state.restaurants.value);
+  const dishes = useSelector((state: any) => state.dishes.value);
+  const [OpenSearchList, setOpenSearchList] = useState(false);
+  const [restaurantsArray, setRestArray] = useState([]);
+  const [dishesArray, setDishArray] = useState([]);
 
   function filterRestaurants(event: any) {
     const restaurant = restaurants.filter((element: any) => {
-      return element.restaurantName
-        .toLowerCase()
-        .includes(searchText.current.value.toLowerCase());
+      if (
+        element.restaurantName
+          .toLowerCase()
+          .includes(searchText.current.value.toLowerCase())
+      ) {
+        return element;
+      }
     });
-    dispatch(setRestaurants(restaurant));
-    event.preventDefault();
-  }
+    const dish = dishes.filter((e: any) => {
+      if (
+        e.dishName
+          .toLowerCase()
+          .includes(searchText.current.value.toLowerCase())
+      ) {
+        return e;
+      }
+    });
+    setDishArray(dish);
+    setRestArray(restaurant);
 
-  useEffect(() => {
-    async function fetchFunction() {
-      const restaurantsURL =
-        "http://localhost:3001/api/restaurants/getRestaurants";
-      const response = await (await fetch(restaurantsURL)).json();
-      dispatch(setRestaurants(response));
-    }
-    fetchFunction();
-  }, []);
+    // dispatch(setRestaurants(restaurant));
+    // dispatch(setDishes(dish));
+
+    // event.preventDefault();
+  }
 
   return (
     <Background>
@@ -47,10 +62,33 @@ export default function SearchBox() {
             type="text"
             placeholder="Search for restaurant cuisine, chef"
             onChange={filterRestaurants}
+            onClick={() => setOpenSearchList(true)}
             ref={searchText}
           />
         </Searchbox>
       </SearchContainer>
+      {OpenSearchList && (
+        <SreachList>
+          <List>
+            <p>
+              <b>restaurants:</b>
+            </p>
+            {restaurantsArray.map((element: any, key: number) => (
+              <div key={key}>
+                <p>{element.restaurantName}</p>
+              </div>
+            ))}
+            <p>
+              <b>dishes:</b>
+            </p>
+            {dishesArray.map((element: any, key: number) => (
+              <div key={key}>
+                <p>{element.dishName}</p>
+              </div>
+            ))}
+          </List>
+        </SreachList>
+      )}
     </Background>
   );
 }

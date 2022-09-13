@@ -1,3 +1,7 @@
+/**************************************
+ ************* DON`T CHECK :)***********
+ ***************************************/
+
 import React from "react";
 import { searchURL } from "../../../constants/imagesURL.ts/searchURL";
 import {

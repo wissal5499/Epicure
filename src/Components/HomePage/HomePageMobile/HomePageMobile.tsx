@@ -10,6 +10,7 @@ import { Props } from "../../../interfaces/SetFunctions";
 import { useDispatch } from "react-redux";
 import { setRestaurants } from "../../Restaurants/restaurantsSlicer";
 import { setChefs } from "../../Chef/chefsSlicer";
+import { setDishes } from "../../Dishes/dishesSlicer";
 
 export default function HomePageMobile(props: Props) {
   const dispatch = useDispatch();
@@ -19,9 +20,14 @@ export default function HomePageMobile(props: Props) {
       const restaurantsURL =
         "http://localhost:3001/api/restaurants/getRestaurants";
       const chefsURL = "http://localhost:3001/api/chefs/getChefs";
-      const response = await (await fetch(restaurantsURL)).json();
+      const dishesURL = "http://localhost:3001/api/dishes/getDishes";
+
+      const restaurants = await (await fetch(restaurantsURL)).json();
+      const dishes = await (await fetch(dishesURL)).json();
       const chefs = await (await fetch(chefsURL)).json();
-      dispatch(setRestaurants(response));
+
+      dispatch(setRestaurants(restaurants));
+      dispatch(setDishes(dishes));
       dispatch(setChefs(chefs));
     }
     fetchFunction();

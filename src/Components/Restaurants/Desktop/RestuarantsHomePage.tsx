@@ -1,3 +1,7 @@
+/**************************************
+ ************* DON`T CHECK :)***********
+ ***************************************/
+
 import React from "react";
 import rest from "../../../constants/JsonFolder/Restaurant.json";
 import GoToRestaurants from "../../Buttons/Desktop/GoToRestaurants";

@@ -1,3 +1,7 @@
+/**************************************
+ ************* DON`T CHECK :)***********
+ ***************************************/
+
 import React from "react";
 import { FooterContainer, FooterElement } from "./styles";
 

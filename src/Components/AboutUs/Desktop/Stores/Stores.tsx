@@ -1,3 +1,7 @@
+/**************************************
+ ************* DON`T CHECK :)***********
+ ***************************************/
+
 import React from "react";
 import "./styles.ts";
 import { StoreContainer, Container, StoreElement, Text, Image } from "./styles";

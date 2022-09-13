@@ -19,12 +19,16 @@ import {
 } from "./styles";
 import { decrement, increment } from "./counterSlicer";
 import { useDispatch, useSelector } from "react-redux";
+import { setmeal } from "../mealsSlicer";
 
 export default function DishInfo() {
+  // dishDetails: any,
+  // closeModal: React.Dispatch<React.SetStateAction<boolean>>
   const location = useLocation();
   const dishInfo = location.state as dishes;
   const dispatch = useDispatch();
   const quantity = useSelector((state: any) => state.quantity.value);
+  const meals = useSelector((state: any) => state.meals.mealsArray);
 
   return (
     <div>
@@ -69,7 +73,14 @@ export default function DishInfo() {
           </ButtonPlusMunis>
         </ContainerBtn>
 
-        <AddToCart>Add to bag</AddToCart>
+        <AddToCart
+          onClick={() => {
+            dispatch(setmeal({ newMeal: dishInfo }));
+            console.log(meals);
+          }}
+        >
+          Add to bag
+        </AddToCart>
         <Hr />
       </DishContainer>
     </div>

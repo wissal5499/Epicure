@@ -87,7 +87,7 @@ export const ContainerBtn= styled.div`
     flex-direction: row;
     gap: 10px;
 `
-export const AddToCart= styled.div`
+export const AddToCart= styled.button`
     display: flex;
     flex-direction: row;
     justify-content: center;

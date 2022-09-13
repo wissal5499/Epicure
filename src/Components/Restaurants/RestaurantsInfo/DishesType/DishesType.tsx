@@ -4,6 +4,7 @@ import {
   dishes,
   Restaurants,
 } from "../../RestaurantsPage/Description/RestaurantsDescription";
+import DishInfo from "./DishInfo/DishInfo";
 import {
   ButtonContainer,
   BreakFast,
@@ -24,11 +25,11 @@ export default function DishesType() {
   const location = useLocation();
   const restaurantInfo = location.state as Restaurants;
   const [type, setType] = useState("breakfast");
-  const [openModal, setOpenModal] = useState(false);
+  //  const [openModal, setOpenModal] = useState(false);
 
   const FilteredDishesArray = restaurantInfo.dishes?.filter(
-    (e: any, key: number) => {
-      return e.type === type;
+    (dish: any, key: number) => {
+      return dish.type === type;
     }
   );
   const GoToDishInfo = (dish: dishes) => {
@@ -54,6 +55,7 @@ export default function DishesType() {
           key={key}
           onClick={() => {
             GoToDishInfo(dish);
+            //  setOpenModal(true);
           }}
         >
           <DishImage src={dish.image_src} alt="rest image" />
@@ -66,6 +68,9 @@ export default function DishesType() {
             </PriceContainer>
           </DishDetails>
         </DishContainer>
+        // {openModal && (
+        //   <DishInfo closeModal={setOpenModal} dishDetails={dish} />
+        // )}
       ))}
     </div>
   );

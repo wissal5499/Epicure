@@ -1,5 +1,4 @@
 import React from "react";
-//import rest from "../../../constants/JsonFolder/Restaurant.json";
 import GoRestuarants from "../../Buttons/Mobile/GoToRestaurants";
 import { settings } from "../../../constants/SliderSettings/settings";
 import { Props } from "../../../interfaces/SetFunctions";

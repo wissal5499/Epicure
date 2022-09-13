@@ -1,3 +1,7 @@
+/**************************************
+ ************* DON`T CHECK :)***********
+ ***************************************/
+
 import React from "react";
 import LogoSite from "../LogoSite/LogoSite";
 import Stores from "../Stores/Stores";
