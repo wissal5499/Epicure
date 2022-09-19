@@ -17,6 +17,7 @@ import {
   LogoButton,
   Icon,
 } from "./styles";
+import LogIn from "../../../Log in";
 
 interface Props {
   openMenueList: boolean;
@@ -25,6 +26,8 @@ interface Props {
   setOpenSearch: React.Dispatch<React.SetStateAction<boolean>>;
   openBag: boolean;
   setOpenBag: React.Dispatch<React.SetStateAction<boolean>>;
+  openUserBox: boolean;
+  setOpenUserBox: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export default function Header(props: Props) {
   const navigate = useNavigate();
@@ -60,7 +63,11 @@ export default function Header(props: Props) {
             >
               <Icon src={searchURL} alt="search icon" />
             </Headerbutton>
-            <Headerbutton>
+            <Headerbutton
+              onClick={() => {
+                props.setOpenUserBox(true);
+              }}
+            >
               <Icon src={userURL} alt="user icon" />
             </Headerbutton>
             <Headerbutton onClick={SetOpenBag}>
@@ -76,6 +83,7 @@ export default function Header(props: Props) {
         <SearchHeader CloseSearchBox={props.setOpenSearch} />
       )}
       {props.openBag && <Bag CloseBagBox={props.setOpenBag} />}
+      {props.openUserBox && <LogIn setOpenUserBox={props.setOpenUserBox} />}
     </HeaderContainer>
   );
 }
